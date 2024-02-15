@@ -10,7 +10,13 @@
 .dropdown-item:click{
 background-color: black;
 }
-
+.card{ 
+  height: 500;
+  width:300px;
+}
+.card-img-top{
+  width:100%;
+}
 .btn-outline {
   color: #fff;
   border-color: #fff;
