@@ -14,20 +14,17 @@ export default function Prodacts() {
       <Header />
 
       <div className="container-fluid ms-2 mt-5">
-        <div className="row">
-          <div class="col-sm-1">
-          <h4>Brand</h4>
-            <form action="/action_page.php">
-            
-              <div class="form-check">
-                
+        <div className="content d-flex container-xxl">
+          <div className="menu p-2">
+            <h4>Brand</h4>
+            <form action="">
+              <div className="form-check">
                 <input
                   type="checkbox"
                   class="form-check-input"
                   id="check1"
                   name="option1"
                   value="something"
-                  
                 />
                 <label class="form-check-label" for="check1">
                   Nike
@@ -49,15 +46,64 @@ export default function Prodacts() {
                 <input type="checkbox" class="form-check-input" />
                 <label class="form-check-label">The Nourth Face</label>
               </div>
-              <button type="submit" class="btn btn-outline-dark px-5 mt-3">
-                Find
-              </button>
             </form>
+            <br></br>
+            <h4>Size</h4>
+            <form action="">
+              <div className="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="check1"
+                  name="option1"
+                  value="something"
+                />
+                <label class="form-check-label" for="check1">
+                  XS
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="check2"
+                  name="option2"
+                  value="something"
+                />
+                <label class="form-check-label" for="check2">
+                  S
+                </label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" />
+                <label class="form-check-label">M</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" />
+                <label class="form-check-label">L</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" />
+                <label class="form-check-label">XL</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" />
+                <label class="form-check-label">2XL</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" />
+                <label class="form-check-label">3XL</label>
+              </div>
+            </form>
+            <button type="submit" class="btn btn-outline-dark mt-2  w-95">
+              Find
+            </button>
           </div>
-          <div className="d-flex flex-wrap col-sm-11">
+
+          <div className="cardss d-flex flex-wrap">
             {[...Array(20)].map((_, index) => (
-              <div className="flex-fill mb-4" key={index}>
-                <div className="card">
+              <div className=" me-4 mb-4" key={index}>
+                <div className="card ">
                   <img
                     className="card-img-top"
                     src={myImage}
@@ -66,8 +112,8 @@ export default function Prodacts() {
                   <div className="card-body">
                     <h5 className="card-title">Product {index + 1}</h5>
                     <p className="card-text">
-                      Products Description Products Description Products
-                      Description Products Description{" "}
+                      Product Description Product Description Product
+                      Description Product Description Product Description{" "}
                     </p>
                     <p className="card-text">Price: </p>
                     <div className="d-flex justify-content-between">

@@ -1,22 +1,72 @@
 .App {
   text-align: center;
-  
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-.dropdown-item:click{
-background-color: black;
+.dropdown-item:click {
+  background-color: black;
 }
-.card{ 
-  height: 500;
-  width:300px;
+.card {
+  max-height: 400;
+  max-width: 300px;
+
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
 }
-.card-img-top{
-  width:100%;
+
+.form-check-input:checked {
+  background-color: #000000 !important;
+  border-color: rgb(0, 0, 0) !important;
 }
+
+.form-check-input:focus {
+  border-color: rgb(0, 0, 0) !important;
+  outline: 1;
+  box-shadow: none !important;
+}
+
+input[type="checkbox"] {
+  accent-color: green;
+}
+
+.flex-item {
+  width: 25%;
+  box-sizing: border-box; /* Ensure padding and borders are included in the width */
+  /* Additional styling for spacing, alignment, etc. */
+}
+.card-img-top {
+  width: 100%;
+}
+.account-image {
+  width: 40px;
+  border: solid 2px white;
+  border-radius: 50px;
+}
+.account-image:click {
+  backface-visibility: hidden;
+}
+.btn-user:hover {
+  background-color: #fff;
+}
+.cardss {
+  justify-content: center;
+  width: calc(100% - 150px);
+}
+.menu {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  box-sizing: border-box;
+  height: 100%;
+  width: 150px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 100px) {
+}
+
 .btn-outline {
   color: #fff;
   border-color: #fff;
@@ -35,11 +85,12 @@ background-color: black;
     animation: App-logo-spin infinite 20s linear;
   }
 }
-.addnav-font{
+
+.addnav-font {
   font-size: 12px;
 }
 
-.addnav-font:hover{
+.addnav-font:hover {
   text-decoration: underline;
 }
 .App-header {
@@ -55,6 +106,11 @@ background-color: black;
 
 .App-link {
   color: #61dafb;
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .nav-item {
+    display: flex;
+  }
 }
 
 @keyframes App-logo-spin {
