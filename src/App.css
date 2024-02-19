@@ -1,3 +1,20 @@
+*:focus {
+  box-shadow: none !important;
+}
+.home-page-container {
+  width: 500px;
+  height: 500px;
+}
+
+.page-link {
+  color: #000000 !important;
+}
+
+.page-link:focus-visible {
+  border: 0 !important;
+  outline: 0 !important;
+}
+
 .App {
   text-align: center;
 }
@@ -10,8 +27,8 @@
   background-color: black;
 }
 .card {
-  max-height: 400;
-  max-width: 300px;
+  height: 530px !important;
+  width: 300px;
 
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
 }
@@ -33,20 +50,19 @@ input[type="checkbox"] {
 
 .flex-item {
   width: 25%;
-  box-sizing: border-box; /* Ensure padding and borders are included in the width */
-  /* Additional styling for spacing, alignment, etc. */
+  box-sizing: border-box;
 }
 .card-img-top {
   width: 100%;
 }
 .account-image {
   width: 40px;
+}
+.account-image:hover {
   border: solid 2px white;
-  border-radius: 50px;
+  transition: border 0.1s ease-out;
 }
-.account-image:click {
-  backface-visibility: hidden;
-}
+
 .btn-user:hover {
   background-color: #fff;
 }
