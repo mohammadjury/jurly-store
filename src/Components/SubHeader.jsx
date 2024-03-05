@@ -5,6 +5,10 @@ import { Link } from "react-router-dom";
 import myImage from "./images/img_avatar5.png";
 
 function SubHeader() {
+  function handleHodies() {}
+
+  function handleTShirts() {}
+
   return (
     <>
       <header className=" bg-light ">
@@ -12,12 +16,12 @@ function SubHeader() {
           <div className="d-flex justify-content-center" id="collapsibleNavbar">
             <ul className="navbar-nav border-0">
               <li className="nav-item rounded">
-                <Link className="nav-link rounded" to="/Products">
+                <Link className="nav-link rounded" onClick={handleHodies}>
                   Hodies
                 </Link>
               </li>
               <li className="nav-item dropdown">
-                <Link className="nav-link rounded" to="/Products">
+                <Link className="nav-link rounded" onClick={handleTShirts}>
                   T-Shirts
                 </Link>
               </li>

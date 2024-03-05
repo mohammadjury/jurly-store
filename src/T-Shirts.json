@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "name": "Product 1",
+      "description": "Detailed description of Product 1",
+      "price": 34.99,
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/4/TL/JV/EU/127973746/nike-t-shirt.jpg",
+      "brand": "Nike"
+    },
+    
+    {
+        "id": 2,
+        "name": "Product 2",
+        "description": "Detailed description of Product 2",
+        "price": 18.99,
+        "image": "https://5.imimg.com/data5/SELLER/Default/2021/4/TL/JV/EU/127973746/nike-t-shirt.jpg",
+        "brand": "Nike"
+      },
+
+      {
+        "id": 3,
+        "name": "Product 3",
+        "description": "Detailed description of Product 3",
+        "price": 25.99,
+        "image": "https://5.imimg.com/data5/SELLER/Default/2021/4/TL/JV/EU/127973746/nike-t-shirt.jpg",
+        "brand": "Nike"
+      },
+
+      {
+        "id": 4,
+        "name": "Product 4",
+        "description": "Detailed description of Product 4 Detailed description of Product 4 Detailed description of Product 4",
+        "price": 23.99,
+        "image": "https://5.imimg.com/data5/SELLER/Default/2021/4/TL/JV/EU/127973746/nike-t-shirt.jpg",
+        "brand": "Nike"
+      },
+      
+      {
+        "id": 5,
+        "name": "Product 1",
+        "description": "Detailed description of Product",
+        "price": 44.99,
+        "image": "https://5.imimg.com/data5/SELLER/Default/2021/4/TL/JV/EU/127973746/nike-t-shirt.jpg",
+        "brand": "Nike"
+      }
+
+
+
+  ]
+  

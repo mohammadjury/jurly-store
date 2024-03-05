@@ -3,17 +3,10 @@ import "../App.css";
 
 //Images
 
-//data
-import productData from "../ProductsData.json";
-
 const selectedBrandsContext = React.createContext(null);
 
-export default function Cards() {
-  const selectedBrands = useContext(selectedBrandsContext);
-
-  console.log(selectedBrands);
-  
-
+export default function Cards(props) {
+  const productData = props.productData;
 
   return (
     <div className="cardss d-flex flex-wrap">

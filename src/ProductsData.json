@@ -4,7 +4,7 @@
       "name": "Product 1",
       "description": "Detailed description of Product 1",
       "price": 34.99,
-      "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799",
+      "image": "https://www.sportsdirect.com/images/products/66326803_l.jpg",
       "brand": "Nike"
     },
     
@@ -13,7 +13,7 @@
         "name": "Product 2",
         "description": "Detailed description of Product 2",
         "price": 18.99,
-        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799",
+        "image": "https://www.sportsdirect.com/images/products/66326803_l.jpg",
         "brand": "Nike"
       },
 
@@ -22,7 +22,7 @@
         "name": "Product 3",
         "description": "Detailed description of Product 3",
         "price": 25.99,
-        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799",
+        "image": "https://www.sportsdirect.com/images/products/66326803_l.jpg",
         "brand": "Nike"
       },
 
@@ -31,7 +31,7 @@
         "name": "Product 4",
         "description": "Detailed description of Product 4 Detailed description of Product 4 Detailed description of Product 4",
         "price": 23.99,
-        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799",
+        "image": "https://www.sportsdirect.com/images/products/66326803_l.jpg",
         "brand": "Nike"
       },
       
@@ -40,7 +40,7 @@
         "name": "Product 1",
         "description": "Detailed description of Product",
         "price": 44.99,
-        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799",
+        "image": "https://www.sportsdirect.com/images/products/66326803_l.jpg",
         "brand": "Nike"
       },
 
@@ -49,8 +49,8 @@
         "name": "Product 1",
         "description": "Detailed description of Product",
         "price": 10.99,
-        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799",
-        "brand": "Nike"
+        "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bc365e4b823146c39befa95101256107_9366/Trefoil_Hoodie_Black_DV2870_01_laydown.jpg",
+        "brand": "Adidas"
       },
 
       {
@@ -58,8 +58,8 @@
         "name": "Product 1",
         "description": "Detailed description of Product",
         "price": 99.99,
-        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799",
-        "brand": "Nike"
+        "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bc365e4b823146c39befa95101256107_9366/Trefoil_Hoodie_Black_DV2870_01_laydown.jpg",
+        "brand": "Adidas"
       },
 
       {
@@ -67,7 +67,7 @@
         "name": "Product 1",
         "description": "Detailed description of Product",
         "price": 66.99,
-        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799",
+        "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bc365e4b823146c39befa95101256107_9366/Trefoil_Hoodie_Black_DV2870_01_laydown.jpg",
         "brand": "Adidas"
       },
 
@@ -76,7 +76,7 @@
         "name": "Product 1",
         "description": "Detailed description of Product",
         "price": 20.99,
-        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799",
+        "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bc365e4b823146c39befa95101256107_9366/Trefoil_Hoodie_Black_DV2870_01_laydown.jpg",
         "brand": "Adidas"
       },
 
@@ -85,7 +85,7 @@
         "name": "Product 1",
         "description": "Detailed description of Product",
         "price": 19.99,
-        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799",
+        "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bc365e4b823146c39befa95101256107_9366/Trefoil_Hoodie_Black_DV2870_01_laydown.jpg",
         "brand": "Adidas"
       },
 
@@ -93,10 +93,64 @@
         "id": 11,
         "name": "Product 1",
         "description": "Detailed description of Product",
-        "price": 50.99,
-        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799",
+        "price": 55.99,
+        "image": "https://www.bfgcdn.com/1500_1500_90/017-0062-8311/the-north-face-drew-peak-pullover-hoodie.jpg",
+        "brand": "TNF"
+      },
+
+      {
+        "id": 12,
+        "name": "Product 1",
+        "description": "Detailed description of Product",
+        "price": 34.99,
+        "image": "https://www.bfgcdn.com/1500_1500_90/017-0062-8311/the-north-face-drew-peak-pullover-hoodie.jpg",
+        "brand": "TNF"
+      },
+
+      {
+        "id": 13,
+        "name": "Product 1",
+        "description": "Detailed description of Product",
+        "price": 10.99,
+        "image": "https://www.bfgcdn.com/1500_1500_90/017-0062-8311/the-north-face-drew-peak-pullover-hoodie.jpg",
+        "brand": "TNF"
+      },
+
+      {
+        "id": 14,
+        "name": "Product 1",
+        "description": "Detailed description of Product",
+        "price": 20.99,
+        "image": "https://www.bfgcdn.com/1500_1500_90/017-0062-8311/the-north-face-drew-peak-pullover-hoodie.jpg",
+        "brand": "TNF"
+      },
+      {
+        "id": 15,
+        "name": "Product 1",
+        "description": "Detailed description of Product",
+        "price": 30.99,
+        "image": "https://www.bfgcdn.com/1500_1500_90/017-0062-8311/the-north-face-drew-peak-pullover-hoodie.jpg",
+        "brand": "TNF"
+      },
+
+      {
+        "id": 16,
+        "name": "Product 1",
+        "description": "Detailed description of Product",
+        "price": 60.99,
+        "image": "https://www.bfgcdn.com/1500_1500_90/017-0062-8311/the-north-face-drew-peak-pullover-hoodie.jpg",
+        "brand": "TNF"
+      },
+
+      {
+        "id": 17,
+        "name": "Product 1",
+        "description": "Detailed description of Product",
+        "price": 40.99,
+        "image": "https://www.bfgcdn.com/1500_1500_90/017-0062-8311/the-north-face-drew-peak-pullover-hoodie.jpg",
         "brand": "TNF"
       }
+
 
 
   ]
