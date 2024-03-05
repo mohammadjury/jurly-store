@@ -5,7 +5,11 @@
   width: 500px;
   height: 500px;
 }
-
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .page-link {
   color: #000000 !important;
 }

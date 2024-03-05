@@ -4,7 +4,8 @@
       "name": "Product 1",
       "description": "Detailed description of Product 1",
       "price": 34.99,
-      "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799"
+      "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799",
+      "brand": "Nike"
     },
     
     {
@@ -12,7 +13,8 @@
         "name": "Product 2",
         "description": "Detailed description of Product 2",
         "price": 18.99,
-        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799"
+        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799",
+        "brand": "Nike"
       },
 
       {
@@ -20,7 +22,8 @@
         "name": "Product 3",
         "description": "Detailed description of Product 3",
         "price": 25.99,
-        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799"
+        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799",
+        "brand": "Nike"
       },
 
       {
@@ -28,7 +31,8 @@
         "name": "Product 4",
         "description": "Detailed description of Product 4 Detailed description of Product 4 Detailed description of Product 4",
         "price": 23.99,
-        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799"
+        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799",
+        "brand": "Nike"
       },
       
       {
@@ -36,7 +40,8 @@
         "name": "Product 1",
         "description": "Detailed description of Product",
         "price": 44.99,
-        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799"
+        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799",
+        "brand": "Nike"
       },
 
       {
@@ -44,7 +49,8 @@
         "name": "Product 1",
         "description": "Detailed description of Product",
         "price": 10.99,
-        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799"
+        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799",
+        "brand": "Nike"
       },
 
       {
@@ -52,7 +58,8 @@
         "name": "Product 1",
         "description": "Detailed description of Product",
         "price": 99.99,
-        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799"
+        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799",
+        "brand": "Nike"
       },
 
       {
@@ -60,7 +67,8 @@
         "name": "Product 1",
         "description": "Detailed description of Product",
         "price": 66.99,
-        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799"
+        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799",
+        "brand": "Adidas"
       },
 
       {
@@ -68,7 +76,8 @@
         "name": "Product 1",
         "description": "Detailed description of Product",
         "price": 20.99,
-        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799"
+        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799",
+        "brand": "Adidas"
       },
 
       {
@@ -76,7 +85,8 @@
         "name": "Product 1",
         "description": "Detailed description of Product",
         "price": 19.99,
-        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799"
+        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799",
+        "brand": "Adidas"
       },
 
       {
@@ -84,7 +94,8 @@
         "name": "Product 1",
         "description": "Detailed description of Product",
         "price": 50.99,
-        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799"
+        "image": "https://mrmockup.com/wp-content/uploads/2023/06/Free-Girl-Hoodie-Mockup-Square-1024x1024.jpg?x38799",
+        "brand": "TNF"
       }
 
 

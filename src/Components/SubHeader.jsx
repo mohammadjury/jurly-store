@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
 
-import myImage from "../Components/images/img_avatar5.png";
+import myImage from "./images/img_avatar5.png";
 
 function SubHeader() {
   return (

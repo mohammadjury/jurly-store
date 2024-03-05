@@ -3,33 +3,12 @@ import "../App.css";
 import { Link } from "react-router-dom";
 
 //import Components
-import SubHeader from "../Components/SubHeader";
+import SubHeader from "./SubHeader";
 
 //import assets
-import myImage from "../Components/images/img_avatar5.png";
+import myImage from "./images/img_avatar5.png";
 
 function Header() {
-  const [isImageClicked, setIsImageClicked] = useState(false);
-  const handleImageClick = () => {
-    <div
-      class="offcanvas offcanvas-end"
-      tabindex="-1"
-      id="offcanvasRight"
-      aria-labelledby="offcanvasRightLabel"
-    >
-      <div class="offcanvas-header">
-        <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-        <button
-          type="button"
-          class="btn-close text-reset"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">...</div>
-    </div>;
-  };
-
   return (
     <>
       <header className=" bg-dark">
@@ -106,7 +85,6 @@ function Header() {
                 <img
                   className="account-image rounded-circle"
                   src={myImage}
-                  onClick={handleImageClick}
                   alt="Card image"
                 />
               </div>

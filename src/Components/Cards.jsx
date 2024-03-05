@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../App.css";
 
 //Images
-import myImage from "../Components/images/img_avatar1.png";
 
 //data
 import productData from "../ProductsData.json";
 
+const selectedBrandsContext = React.createContext(null);
+
 export default function Cards() {
+  const selectedBrands = useContext(selectedBrandsContext);
+
+  console.log(selectedBrands);
+  
+
+
   return (
     <div className="cardss d-flex flex-wrap">
       {productData.map((product, index) => (

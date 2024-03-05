@@ -19,6 +19,7 @@ export default function Prodacts() {
           <Cards />
         </div>
       </div>
+
       <PageNum />
 
       <Footer />
