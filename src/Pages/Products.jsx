@@ -4,17 +4,32 @@ import { useState } from "react";
 
 //Components
 import Header from "../Components/Header";
+import SubHeader from "../Components/SubHeader";
 import Footer from "../Components/Footer";
 import Cards from "../Components/Cards";
 import FindByMenu from "../Components/FindByMenu";
 import PageNum from "../Components/PageNum";
 
-import productData from "../ProductsData.json";
-import TShirtsData from "../T-Shirts.json";
+import hodiesData from "../hodiesData.json";
+import TShirtsData from "../t-shirtsData.json";
 
 export default function Products() {
-  const [ProductData, setProductData] = useState(productData);
-  const [filteredproductData, setFilteredproductData] = useState(ProductData);
+  const [productData, setProductData] = useState(hodiesData);
+  const [filteredproductData, setFilteredproductData] = useState(productData);
+
+  function handleHeaderItem(clickedItem) {
+    if (clickedItem == "T-Shirts") {
+      setProductData(TShirtsData);
+      setFilteredproductData((prevProductData) =>
+        prevProductData === hodiesData ? TShirtsData : prevProductData
+      );
+    } else if (clickedItem == "Hodies") {
+      setProductData(hodiesData);
+      setFilteredproductData((prevProductData) =>
+        prevProductData === TShirtsData ? hodiesData : prevProductData
+      );
+    }
+  }
 
   function handleSelectedBrands(checkedBrands) {
     const filteredByBrand = productData.filter(
@@ -33,6 +48,7 @@ export default function Products() {
   return (
     <>
       <Header />
+      <SubHeader onHeaderItemClicked={handleHeaderItem} />
 
       <div className="container-fluid mt-4">
         <div className="content d-flex container-xxl justify-content-center p-0">

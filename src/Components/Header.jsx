@@ -3,7 +3,6 @@ import "../App.css";
 import { Link } from "react-router-dom";
 
 //import Components
-import SubHeader from "./SubHeader";
 
 //import assets
 import myImage from "./images/img_avatar5.png";
@@ -91,7 +90,6 @@ function Header() {
             </div>
           </div>
         </nav>
-        <SubHeader />
       </header>
     </>
   );
