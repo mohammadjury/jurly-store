@@ -3,10 +3,13 @@ import "../App.css";
 
 //Images
 
-const selectedBrandsContext = React.createContext(null);
-
 export default function Cards(props) {
   const productData = props.productData;
+  const addToCart = props.addToCart;
+
+  const handleAddToCart = (clickedProduct) => {
+    addToCart(clickedProduct);
+  };
 
   return (
     <div className="cardss d-flex flex-wrap">
@@ -20,11 +23,13 @@ export default function Cards(props) {
             />
             <div className="card-body">
               <h5 className="card-title">{product.name}</h5>
-              <p className="card-text">{product.description}</p>
-
               <p className="card-text">Price: {product.price}</p>
               <div className="d-flex justify-content-between">
-                <button href="#" className="btn btn-dark">
+                <button
+                  className="btn btn-dark"
+                  value="hi"
+                  onClick={(e) => handleAddToCart(product)}
+                >
                   Add to cart
                 </button>
                 <button href="#" className="btn btn-outline-secondary ms-auto">

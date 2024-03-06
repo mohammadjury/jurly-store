@@ -3,9 +3,11 @@ import "../App.css";
 import { Link } from "react-router-dom";
 
 //import Components
+import NavBarCart from "./NavBarCart";
+import NavBarAccImg from "./NavBarAccImg";
+//NavBarAccImg
 
 //import assets
-import myImage from "./images/img_avatar5.png";
 
 function Header() {
   return (
@@ -68,8 +70,8 @@ function Header() {
                   </a>
                 </li>
               </ul>
-              <div className="seacrh ps-0 container-xxl d-flex">
-                <div className="input-group me-5 ">
+              <div className="search ps-0 container-xxl d-flex">
+                <div className="input-group me-3 ">
                   <input
                     className="form-control"
                     type="search"
@@ -80,13 +82,9 @@ function Header() {
                     Search
                   </button>
                 </div>
-
-                <img
-                  className="account-image rounded-circle"
-                  src={myImage}
-                  alt="Card image"
-                />
               </div>
+              <NavBarCart />
+              <NavBarAccImg />
             </div>
           </div>
         </nav>
