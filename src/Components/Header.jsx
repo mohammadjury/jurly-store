@@ -83,7 +83,17 @@ function Header() {
                   </button>
                 </div>
               </div>
-              <NavBarCart />
+              <div className="cart-counter">
+                <NavBarCart />
+                <div
+                  className="countercart"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasScrolling"
+                  aria-controls="offcanvasScrolling"
+                >
+                  99
+                </div>
+              </div>
               <NavBarAccImg />
             </div>
           </div>

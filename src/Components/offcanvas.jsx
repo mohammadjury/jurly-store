@@ -5,9 +5,16 @@ export default function Offcanvas(props) {
 
   const listCartItems = () => {
     return cartItems.map((item, index) => (
-      <li className="cart-list-item" key={index}>
-        {item.name}
-      </li>
+      <div className="cart-list-item d-flex" key={index}>
+        <div className="cart-info">
+          {item.name}
+          <br />
+          {item.price}
+        </div>
+        <div className="cart-item-img">
+          <img className="cart-item-img" src={item.image}></img>
+        </div>
+      </div>
     ));
   };
   return (
