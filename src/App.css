@@ -16,10 +16,17 @@
 
 .cart-list {
   list-style-type: none;
+  padding: 0;
+}
+
+.btn-delete {
+  height: 15px;
+  width: 15px;
 }
 
 .cart-item-img {
   height: 100%;
+  border-radius: 10px;
 }
 
 .cart-list-item {

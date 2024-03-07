@@ -9,7 +9,8 @@ import NavBarAccImg from "./NavBarAccImg";
 
 //import assets
 
-function Header() {
+function Header(props) {
+  const cartItems = props.cartItems;
   return (
     <>
       <header className=" bg-dark">
@@ -91,7 +92,7 @@ function Header() {
                   data-bs-target="#offcanvasScrolling"
                   aria-controls="offcanvasScrolling"
                 >
-                  99
+                  {cartItems.length}
                 </div>
               </div>
               <NavBarAccImg />
