@@ -1,100 +1,201 @@
 import React from "react";
 import "../App.css";
-import Header from "../Components/Header";
 import Footer from "../Components/Footer";
-
-import myImage from "../Components/images/img_avatar5.png";
+import HomePageSlider from "../Components/HomePageSlider";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 export default function Home() {
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 6,
+      slidesToSlide: 3, // optional, default to 1.
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 3,
+      slidesToSlide: 2, // optional, default to 1.
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 2,
+      slidesToSlide: 2, // optional, default to 1.
+    },
+  };
+
   return (
     <>
-      <Header />
-      <main>
-        <div className="home-page-container">
-          <div
-            id="carouselExampleDark"
-            class="carousel carousel-dark slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleDark"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleDark"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleDark"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src={myImage} class="d-block w-100" alt="..." />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>
-                    Some representative placeholder content for the first slide.
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src={myImage} class="d-block w-100" alt="..." />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>
-                    Some representative placeholder content for the second
-                    slide.
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src={myImage} class="d-block w-100" alt="..." />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>
-                    Some representative placeholder content for the third slide.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+      <div className="container-xxl">
+        <Carousel
+          swipeable={false}
+          draggable={false}
+          showDots={true}
+          responsive={responsive}
+          ssr={false} // means to render carousel on server-side.
+          infinite={true}
+          autoPlay={true}
+          autoPlaySpeed={4000}
+          keyBoardControl={true}
+          customTransition="all .5"
+          transitionDuration={500}
+          containerClass="carousel-container"
+          removeArrowOnDeviceType={["tablet", "mobile"]}
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
+        >
+          <div>
+            <img
+              width={200}
+              src="https://5.imimg.com/data5/SELLER/Default/2021/4/TL/JV/EU/127973746/nike-t-shirt.jpg"
+            ></img>
           </div>
-        </div>
-      </main>
+          <div>
+            <img
+              width={200}
+              src="https://media.klopperssport.co.za/wp-content/uploads/sites/2/2023/05/827H_1.jpg"
+            ></img>
+          </div>
+          <div>
+            <img
+              width={200}
+              src="https://photos6.spartoo.eu/photos/764/7646428/7646428_500_A.jpg"
+            ></img>
+          </div>
+          <div>
+            <img
+              width={200}
+              src="https://www.bfgcdn.com/1500_1500_90/017-0062-8311/the-north-face-drew-peak-pullover-hoodie.jpg"
+            ></img>
+          </div>
+          <div>
+            <img
+              width={200}
+              src="https://www.sportsdirect.com/images/products/66326803_l.jpg"
+            ></img>
+          </div>
+
+          <div>
+            <img
+              width={200}
+              src="https://www.sportsdirect.com/images/products/66326803_l.jpg"
+            ></img>
+          </div>
+
+          <div>
+            <img
+              width={200}
+              src="https://www.sportsdirect.com/images/products/66326803_l.jpg"
+            ></img>
+          </div>
+
+          <div>
+            <img
+              width={200}
+              src="https://www.sportsdirect.com/images/products/66326803_l.jpg"
+            ></img>
+          </div>
+
+          <div>
+            <img
+              width={200}
+              src="https://www.sportsdirect.com/images/products/66326803_l.jpg"
+            ></img>
+          </div>
+
+          <div>
+            <img
+              width={200}
+              src="https://www.sportsdirect.com/images/products/66326803_l.jpg"
+            ></img>
+          </div>
+        </Carousel>
+
+        <Carousel
+          swipeable={false}
+          draggable={false}
+          showDots={true}
+          responsive={responsive}
+          ssr={false} // means to render carousel on server-side.
+          infinite={true}
+          autoPlay={true}
+          autoPlaySpeed={4000}
+          keyBoardControl={true}
+          customTransition="all .5"
+          transitionDuration={500}
+          containerClass="carousel-container"
+          removeArrowOnDeviceType={["tablet", "mobile"]}
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
+        >
+          <div>
+            <img
+              width={200}
+              src="https://5.imimg.com/data5/SELLER/Default/2021/4/TL/JV/EU/127973746/nike-t-shirt.jpg"
+            ></img>
+          </div>
+          <div>
+            <img
+              width={200}
+              src="https://media.klopperssport.co.za/wp-content/uploads/sites/2/2023/05/827H_1.jpg"
+            ></img>
+          </div>
+          <div>
+            <img
+              width={200}
+              src="https://photos6.spartoo.eu/photos/764/7646428/7646428_500_A.jpg"
+            ></img>
+          </div>
+          <div>
+            <img
+              width={200}
+              src="https://www.bfgcdn.com/1500_1500_90/017-0062-8311/the-north-face-drew-peak-pullover-hoodie.jpg"
+            ></img>
+          </div>
+          <div>
+            <img
+              width={200}
+              src="https://www.sportsdirect.com/images/products/66326803_l.jpg"
+            ></img>
+          </div>
+
+          <div>
+            <img
+              width={200}
+              src="https://www.sportsdirect.com/images/products/66326803_l.jpg"
+            ></img>
+          </div>
+
+          <div>
+            <img
+              width={200}
+              src="https://www.sportsdirect.com/images/products/66326803_l.jpg"
+            ></img>
+          </div>
+
+          <div>
+            <img
+              width={200}
+              src="https://www.sportsdirect.com/images/products/66326803_l.jpg"
+            ></img>
+          </div>
+
+          <div>
+            <img
+              width={200}
+              src="https://www.sportsdirect.com/images/products/66326803_l.jpg"
+            ></img>
+          </div>
+
+          <div>
+            <img
+              width={200}
+              src="https://www.sportsdirect.com/images/products/66326803_l.jpg"
+            ></img>
+          </div>
+        </Carousel>
+      </div>
+
       <Footer />
     </>
   );

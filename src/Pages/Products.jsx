@@ -3,31 +3,24 @@ import "../App.css";
 import { useState } from "react";
 
 //Components
-import Header from "../Components/Header";
 import SubHeader from "../Components/SubHeader";
 import Footer from "../Components/Footer";
 import Cards from "../Components/Cards";
 import FindByMenu from "../Components/FindByMenu";
 import PageNum from "../Components/PageNum";
-import Offcanvas from "../Components/offcanvas";
 
 //data
 import hodiesData from "../hodiesData.json";
 import TShirtsData from "../t-shirtsData.json";
 
-export default function Products() {
+export default function Products(props) {
   const [productData, setProductData] = useState(hodiesData);
   const [filteredproductData, setFilteredproductData] = useState(productData);
-  const [cartItems, setCartItems] = useState([]);
+  const setCartItems = props.setCartItems;
+  const cartItems = props.cartItems;
 
-  const deleteCartItem = (index) => {
-    const updatedCartItems = [...cartItems];
-    updatedCartItems.splice(index, 1);
-    setCartItems(updatedCartItems);
-  };
   const addToCart = (clickedItem) => {
     setCartItems([...cartItems, clickedItem]);
-    console.log(cartItems);
   };
 
   function handleHeaderItem(clickedItem) {
@@ -60,9 +53,8 @@ export default function Products() {
 
   return (
     <>
-      <Header cartItems={cartItems} />
       <SubHeader onHeaderItemClicked={handleHeaderItem} />
-      <Offcanvas cartItems={cartItems} deleteCartItem={deleteCartItem} />
+
       <div className="container-fluid mt-4">
         <div className="content d-flex container-xxl justify-content-center p-0">
           <FindByMenu onSelectBrand={handleSelectedBrands} />

@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 //Images
 
@@ -28,13 +29,21 @@ export default function Cards(props) {
                 <button
                   className="btn btn-dark"
                   value="hi"
+                  data-bs-trigger="open"
+                  //data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasScrolling"
+                  aria-controls="offcanvasScrolling"
                   onClick={(e) => handleAddToCart(product)}
                 >
                   Add to cart
                 </button>
-                <button href="#" className="btn btn-outline-secondary ms-auto">
+
+                <Link
+                  className="btn btn-outline-secondary ms-auto"
+                  to={"/Product/" + product.id}
+                >
                   View Details
-                </button>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,9 +1,12 @@
 *:focus {
   box-shadow: none !important;
 }
+.main-div {
+  width: 100%;
+}
 .home-page-container {
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  height: 500px !important;
 }
 .cart-counter {
   display: grid;
