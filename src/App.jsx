@@ -22,7 +22,12 @@ export default function App() {
         <Header cartItems={cartItems} />
         <Offcanvas cartItems={cartItems} deleteCartItem={deleteCartItem} />
         <Routes>
-          <Route index element={<Products />} />
+          <Route
+            index
+            element={
+              <Products setCartItems={setCartItems} cartItems={cartItems} />
+            }
+          />
           <Route path="/home" element={<Home cartItems={cartItems} />} />
           <Route
             path="/Products"

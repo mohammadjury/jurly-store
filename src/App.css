@@ -1,6 +1,11 @@
 *:focus {
   box-shadow: none !important;
 }
+* {
+  padding: 0px;
+  margin: 0;
+}
+
 .main-div {
   width: 100%;
 }
