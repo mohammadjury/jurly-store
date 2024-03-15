@@ -1,11 +1,15 @@
 [
     {
       "id": 1,
-      "name": "Product 1",
-      "description": "Detailed description of Product 1",
+      "name": "Product 1 Product 1 Product 1 Product 1 Product 1 Product 1 Product 1 Product 1 Product 1",
+      "description": "Stay warm and stylish with our black Nike hoodie, the ultimate blend of comfort and fashion-forward design. Crafted from premium materials, this hoodie offers unparalleled durability and softness for all-day wear. The sleek black colorway adds a touch of sophistication to your look, while the iconic Nike logo on the chest makes a bold statement. Featuring a cozy hood and spacious kangaroo pocket, it offers both warmth and functionality. Whether you're hitting the gym, running errands, or lounging at home, this hoodie is your go-to choice. Its versatile design makes it suitable for various occasions, from casual outings to outdoor adventures. The high-quality construction ensures long-lasting performance, while the breathable fabric keeps you comfortable in any weather. With its classic black hue, this hoodie effortlessly pairs with any outfit, making it a wardrobe staple for every fashion enthusiast. The Nike brand is synonymous with excellence and innovation, and this hoodie is no exception. Experience the perfect blend of style and functionality with this essential piece from Nike's collection. Elevate your streetwear game and showcase your athletic flair with confidence. Available in a wide range of sizes, our black Nike hoodie ensures the perfect fit for every body type. Whether you prefer a relaxed or fitted look, you'll find the ideal size to suit your preferences. Don't miss out on this must-have addition to your wardrobe. Shop now and add a touch of urban chic to your everyday style with our black Nike hoodie. Experience the comfort, quality, and style that only Nike can deliver. With its timeless appeal and versatile design, this hoodie will become your new favorite go-to piece, Stay warm and stylish with our black Nike hoodie, the ultimate blend of comfort and fashion-forward design. Crafted from premium materials, this hoodie offers unparalleled durability and softness for all-day wear. The sleek black colorway adds a touch of sophistication to your look, while the iconic Nike logo on the chest makes a bold statement. Featuring a cozy hood and spacious kangaroo pocket, it offers both warmth and functionality. Whether you're hitting the gym, running errands, or lounging at home, this hoodie is your go-to choice. Its versatile design makes it suitable for various occasions, from casual outings to outdoor adventures. The high-quality construction ensures long-lasting performance, while the breathable fabric keeps you comfortable in any weather. With its classic black hue, this hoodie effortlessly pairs with any outfit, making it a wardrobe staple for every fashion enthusiast. The Nike brand is synonymous with excellence and innovation, and this hoodie is no exception. Experience the perfect blend of style and functionality with this essential piece from Nike's collection. Elevate your streetwear game and showcase your athletic flair with confidence. Available in a wide range of sizes, our black Nike hoodie ensures the perfect fit for every body type. Whether you prefer a relaxed or fitted look, you'll find the ideal size to suit your preferences. Don't miss out on this must-have addition to your wardrobe. Shop now and add a touch of urban chic to your everyday style with our black Nike hoodie. Experience the comfort, quality, and style that only Nike can deliver. With its timeless appeal and versatile design, this hoodie will become your new favorite go-to piece.",
       "price": 34.99,
       "image": "https://www.sportsdirect.com/images/products/66326803_l.jpg",
-      "brand": "Nike"
+      "s-images":[],
+      "brand": "Nike",
+      "category": "clothes",
+      "type": "hoodie"
+
     },
     
     {
@@ -14,7 +18,9 @@
         "description": "Detailed description of Product 2",
         "price": 18.99,
         "image": "https://www.sportsdirect.com/images/products/66326803_l.jpg",
-        "brand": "Nike"
+        "brand": "Nike",
+        "category": "clothes",
+        "type": "hoodie"
       },
 
       {
@@ -23,7 +29,9 @@
         "description": "Detailed description of Product 3",
         "price": 25.99,
         "image": "https://www.sportsdirect.com/images/products/66326803_l.jpg",
-        "brand": "Nike"
+        "brand": "Nike",
+        "category": "clothes",
+        "type": "hoodie"
       },
 
       {
@@ -32,7 +40,9 @@
         "description": "Detailed description of Product 4 Detailed description of Product 4 Detailed description of Product 4",
         "price": 23.99,
         "image": "https://www.sportsdirect.com/images/products/66326803_l.jpg",
-        "brand": "Nike"
+        "brand": "Nike",
+        "category": "clothes",
+        "type": "hoodie"
       },
       
       {
@@ -41,7 +51,9 @@
         "description": "Detailed description of Product",
         "price": 44.99,
         "image": "https://www.sportsdirect.com/images/products/66326803_l.jpg",
-        "brand": "Nike"
+        "brand": "Nike",
+        "category": "clothes",
+        "type": "hoodie"
       },
 
       {
@@ -50,7 +62,9 @@
         "description": "Detailed description of Product",
         "price": 10.99,
         "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bc365e4b823146c39befa95101256107_9366/Trefoil_Hoodie_Black_DV2870_01_laydown.jpg",
-        "brand": "Adidas"
+        "brand": "Adidas",
+        "category": "clothes",
+        "type": "hoodie"
       },
 
       {
@@ -59,7 +73,9 @@
         "description": "Detailed description of Product",
         "price": 99.99,
         "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bc365e4b823146c39befa95101256107_9366/Trefoil_Hoodie_Black_DV2870_01_laydown.jpg",
-        "brand": "Adidas"
+        "brand": "Adidas",
+        "category": "clothes",
+        "type": "hoodie"
       },
 
       {
@@ -68,7 +84,9 @@
         "description": "Detailed description of Product",
         "price": 66.99,
         "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bc365e4b823146c39befa95101256107_9366/Trefoil_Hoodie_Black_DV2870_01_laydown.jpg",
-        "brand": "Adidas"
+        "brand": "Adidas",
+        "category": "clothes",
+        "type": "hoodie"
       },
 
       {
@@ -77,7 +95,9 @@
         "description": "Detailed description of Product",
         "price": 20.99,
         "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bc365e4b823146c39befa95101256107_9366/Trefoil_Hoodie_Black_DV2870_01_laydown.jpg",
-        "brand": "Adidas"
+        "brand": "Adidas",
+        "category": "clothes",
+        "type": "hoodie"
       },
 
       {
@@ -86,7 +106,9 @@
         "description": "Detailed description of Product",
         "price": 19.99,
         "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bc365e4b823146c39befa95101256107_9366/Trefoil_Hoodie_Black_DV2870_01_laydown.jpg",
-        "brand": "Adidas"
+        "brand": "Adidas",
+        "category": "clothes",
+        "type": "hoodie"
       },
 
       {
@@ -95,7 +117,9 @@
         "description": "Detailed description of Product",
         "price": 55.99,
         "image": "https://www.bfgcdn.com/1500_1500_90/017-0062-8311/the-north-face-drew-peak-pullover-hoodie.jpg",
-        "brand": "TNF"
+        "brand": "TNF",
+        "category": "clothes",
+        "type": "hoodie"
       },
 
       {
@@ -104,7 +128,9 @@
         "description": "Detailed description of Product",
         "price": 34.99,
         "image": "https://www.bfgcdn.com/1500_1500_90/017-0062-8311/the-north-face-drew-peak-pullover-hoodie.jpg",
-        "brand": "TNF"
+        "brand": "TNF",
+        "category": "clothes",
+        "type": "hoodie"
       },
 
       {
@@ -113,7 +139,9 @@
         "description": "Detailed description of Product",
         "price": 10.99,
         "image": "https://www.bfgcdn.com/1500_1500_90/017-0062-8311/the-north-face-drew-peak-pullover-hoodie.jpg",
-        "brand": "TNF"
+        "brand": "TNF",
+        "category": "clothes",
+        "type": "hoodie"
       },
 
       {
@@ -122,7 +150,9 @@
         "description": "Detailed description of Product",
         "price": 20.99,
         "image": "https://www.bfgcdn.com/1500_1500_90/017-0062-8311/the-north-face-drew-peak-pullover-hoodie.jpg",
-        "brand": "TNF"
+        "brand": "TNF",
+        "category": "clothes",
+        "type": "hoodie"
       },
       {
         "id": 15,
@@ -130,7 +160,9 @@
         "description": "Detailed description of Product",
         "price": 30.99,
         "image": "https://www.bfgcdn.com/1500_1500_90/017-0062-8311/the-north-face-drew-peak-pullover-hoodie.jpg",
-        "brand": "TNF"
+        "brand": "TNF",
+        "category": "clothes",
+        "type": "hoodie"
       },
 
       {
@@ -139,7 +171,9 @@
         "description": "Detailed description of Product",
         "price": 60.99,
         "image": "https://www.bfgcdn.com/1500_1500_90/017-0062-8311/the-north-face-drew-peak-pullover-hoodie.jpg",
-        "brand": "TNF"
+        "brand": "TNF",
+        "category": "clothes",
+        "type": "hoodie"
       },
 
       {
@@ -148,10 +182,9 @@
         "description": "Detailed description of Product",
         "price": 40.99,
         "image": "https://www.bfgcdn.com/1500_1500_90/017-0062-8311/the-north-face-drew-peak-pullover-hoodie.jpg",
-        "brand": "TNF"
+        "brand": "TNF",
+        "category": "clothes",
+        "type": "hoodie"
       }
-
-
-
   ]
   

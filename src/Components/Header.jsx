@@ -17,73 +17,51 @@ function Header(props) {
   return (
     <>
       <header className=" bg-dark">
-        <nav className="navbar container-xxl navbar-expand-md bg-dark navbar-dark">
-          <div className="container-fluid d-flex">
-            <Link className="navbar-brand" to="/Home">
-              JURLY
-            </Link>
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapsibleNavbar"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul className="navbar-nav nav-tabs border-0 me-3 d-md-flex">
-                <Link className=" nav-item nav-link rounded" to="/Home">
-                  Home
-                </Link>
+        <nav className="navbar container-xxl d-flex navbar-expand-md bg-dark navbar-dark p-4">
+          <button
+            className="navbar-toggler "
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <Link className="navbar-brand ms-2 me-auto" to="/Home">
+            <h2 className="pt-2">
+              <strong>JURLY</strong>
+            </h2>
+          </Link>
 
-                <li className="nav-item dropdown">
-                  <Link
-                    className="nav-link rounded dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    href=""
-                  >
-                    Products
-                  </Link>
-                  <ul className="dropdown-menu rounded">
-                    <li>
-                      <Link className="dropdown-item" to="/Products">
-                        Hodies
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="dropdown-item" to="/Products">
-                        T-Shirts
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="dropdown-item" to="/Products">
-                        Mugs
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="dropdown-item" to="/Products">
-                        more
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link rounded" to="">
-                    Sales
-                  </Link>
-                </li>
-              </ul>
-              <SearchField />
-              <div className="cart-counter">
-                <NavBarCart />
-                {cartItems.length > 0 ? (
-                  <CartCounter cartItems={cartItems} />
-                ) : (
-                  <div />
-                )}
-              </div>
-              <NavBarAccImg />
+          <div
+            className="collapse navbar-collapse ms-2 "
+            id="collapsibleNavbar"
+          >
+            <ul className="navbar-nav nav-tabs border-0 me-3 d-md-flex">
+              <Link className=" nav-item nav-link rounded ps-auto" to="/Home">
+                <strong>Home</strong>
+              </Link>
+
+              <Link className="nav-link  rounded ps-auto" to="/Products">
+                <strong>Products</strong>
+              </Link>
+
+              <Link className="nav-item nav-link rounded ps-auto" to="">
+                <strong>Sales</strong>
+              </Link>
+            </ul>
+            <SearchField />
+          </div>
+
+          <div className="d-flex ms-auto">
+            <div className="cart-counter">
+              <NavBarCart />
+              {cartItems.length > 0 ? (
+                <CartCounter cartItems={cartItems} />
+              ) : (
+                <div />
+              )}
             </div>
+            <NavBarAccImg />
           </div>
         </nav>
       </header>

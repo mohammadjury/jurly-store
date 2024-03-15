@@ -21,7 +21,7 @@ export default function FindByMenu({ onSelectBrand }) {
 
   return (
     <>
-      <div className="menu d-none d-md-block p-2">
+      <div className="menu bg-white d-none d-sm-block p-2">
         <h4>Brand</h4>
         <form action="">
           <div className="form-check">
@@ -58,7 +58,7 @@ export default function FindByMenu({ onSelectBrand }) {
               checked={isChecked.TNF}
               onChange={handleChange}
             />
-            <label className="form-check-label">The Nourth Face</label>
+            <label className="form-check-label">The North Face</label>
           </div>
         </form>
         <br></br>
@@ -109,9 +109,6 @@ export default function FindByMenu({ onSelectBrand }) {
             <label className="form-check-label">3XL</label>
           </div>
         </form>
-        <button type="submit" className="btn btn-outline-dark mt-2  w-95">
-          Find
-        </button>
       </div>
     </>
   );

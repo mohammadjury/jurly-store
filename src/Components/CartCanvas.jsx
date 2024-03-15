@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import cartIcon from "./images/cart-icon.ico";
 import trashIcon from "./images/trash-icon.png";
 export default function Offcanvas(props) {
@@ -51,23 +52,24 @@ export default function Offcanvas(props) {
         id="offcanvasScrolling"
         aria-labelledby="offcanvasScrollingLabel"
       >
-        <div className="offcanvas-header bg-dark">
+        <div className=" bg-dark d-flex align-items-center p-2">
           <img
-            className="cart-image rounded-circle"
+            className="rounded-circle"
+            width={50}
             src={cartIcon}
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasScrolling"
             aria-controls="offcanvasScrolling"
           />
-          <h5
+          <h3
             className="offcanvas-title text-white"
             id="offcanvasScrollingLabel"
           >
             Cart
-          </h5>
+          </h3>
           <button
             type="button"
-            className="btn-close bg-white text-reset"
+            className="btn-close bg-white text-reset ms-auto p-2 "
             data-bs-dismiss="offcanvas"
             aria-label="Close"
           ></button>
@@ -78,7 +80,13 @@ export default function Offcanvas(props) {
             <div className="d-flex flex-column justify-content-center px-10">
               <h4>Total Price:{roundedTotalPrice}</h4>
               <br />
-              <button className="btn btn-success">Purchase</button>
+              <Link
+                to="/Cart"
+                className="btn btn-success d-flex justify-content-center align-items-center"
+              >
+                <img src={cartIcon} width={50}></img>
+                <h4 className="pt-2">Go To Cart</h4>
+              </Link>
             </div>
           ) : (
             <div className="d-flex justify-content-center px-10">

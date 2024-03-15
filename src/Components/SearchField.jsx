@@ -2,7 +2,7 @@ export default function Search() {
   return (
     <>
       <div className="search ps-0 container-xxl d-flex">
-        <div className="input-group me-3 ">
+        <div className="input-group me-1 ">
           <input
             className="form-control"
             type="search"

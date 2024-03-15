@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 
 export default function Cards(props) {
   const productData = props.productData;
-  const addToCart = props.addToCart;
+  const handleAddToCartPP = props.handleAddToCartPP;
 
   const handleAddToCart = (clickedProduct) => {
-    addToCart(clickedProduct);
+    handleAddToCartPP(clickedProduct);
   };
 
   return (
@@ -24,7 +24,7 @@ export default function Cards(props) {
             />
             <div className="card-body">
               <h5 className="card-title">{product.name}</h5>
-              <p className="card-text">Price: {product.price}</p>
+              <p className="card-text">Price: {product.price}$</p>
               <div className="d-flex justify-content-between">
                 <button
                   className="btn btn-dark"

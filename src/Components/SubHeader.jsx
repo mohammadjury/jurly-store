@@ -15,7 +15,7 @@ function SubHeader({ onHeaderItemClicked }) {
 
   return (
     <>
-      <header className=" bg-light ">
+      <header className="SubHeader bg-gray ">
         <nav className="navbar container-xxl navbar-expand d-flex justify-content-center p-0">
           <div className="d-flex justify-content-center" id="collapsibleNavbar">
             <ul className="navbar-nav border-0">
