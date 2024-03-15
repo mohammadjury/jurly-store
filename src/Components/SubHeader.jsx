@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
 
-import myImage from "./images/img_avatar5.png";
-
 function SubHeader({ onHeaderItemClicked }) {
   const [subHeaderSelection, setSubHeaderSelection] = useState();
 

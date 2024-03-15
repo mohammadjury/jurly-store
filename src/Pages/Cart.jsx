@@ -50,7 +50,7 @@ export default function Cart(props) {
   };
   return (
     <>
-      <div className=" container position-relative d-flex justify-content-center">
+      <div className=" cart-page container position-relative d-flex justify-content-center">
         <ul className="cart-list m-3">{listCartItems()}</ul>
         {cartItems.length > 0 ? (
           <div className="checkout m-3 p-3 rounded d-flex flex-column justify-content-center px-10">

@@ -7,7 +7,9 @@
         "image": "https://5.imimg.com/data5/SELLER/Default/2021/4/TL/JV/EU/127973746/nike-t-shirt.jpg",
         "brand": "Nike",
         "category": "clothes",
-        "type": "t-shirt"
+        "type": "t-shirt",
+        "quantity": 0
+        
 
       },
       
@@ -19,7 +21,8 @@
           "image": "https://5.imimg.com/data5/SELLER/Default/2021/4/TL/JV/EU/127973746/nike-t-shirt.jpg",
           "brand": "Nike",
           "category": "clothes",
-          "type": "t-shirt"
+          "type": "t-shirt",
+          "quantity": 0
         },
   
         {
@@ -30,7 +33,9 @@
           "image": "https://5.imimg.com/data5/SELLER/Default/2021/4/TL/JV/EU/127973746/nike-t-shirt.jpg",
           "brand": "Nike",
           "category": "clothes",
-          "type": "t-shirt"
+          "type": "t-shirt",
+          "quantity": 0
+        
         },
   
         {
@@ -41,7 +46,8 @@
           "image": "https://5.imimg.com/data5/SELLER/Default/2021/4/TL/JV/EU/127973746/nike-t-shirt.jpg",
           "brand": "Nike",
           "category": "clothes",
-          "type": "t-shirt"
+          "type": "t-shirt",
+          "quantity": 0
         },
         
         {
@@ -52,7 +58,8 @@
           "image": "https://5.imimg.com/data5/SELLER/Default/2021/4/TL/JV/EU/127973746/nike-t-shirt.jpg",
           "brand": "Nike",
           "category": "clothes",
-          "type": "t-shirt"
+          "type": "t-shirt",
+          "quantity": 0
         },
   
         {
@@ -63,7 +70,8 @@
           "image": "https://photos6.spartoo.eu/photos/764/7646428/7646428_500_A.jpg",
           "brand": "Adidas",
           "category": "clothes",
-          "type": "t-shirt"
+          "type": "t-shirt",
+          "quantity": 0
         },
   
         {
@@ -74,7 +82,8 @@
           "image": "https://photos6.spartoo.eu/photos/764/7646428/7646428_500_A.jpg",
           "brand": "Adidas",
           "category": "clothes",
-          "type": "t-shirt"
+          "type": "t-shirt",
+          "quantity": 0
         },
   
         {
@@ -85,7 +94,8 @@
           "image": "https://photos6.spartoo.eu/photos/764/7646428/7646428_500_A.jpg",
           "brand": "Adidas",
           "category": "clothes",
-          "type": "t-shirt"
+          "type": "t-shirt",
+        "quantity": 0
         },
   
         
@@ -98,7 +108,8 @@
           "image": "https://photos6.spartoo.eu/photos/764/7646428/7646428_500_A.jpg",
           "brand": "Adidas",
           "category": "clothes",
-          "type": "t-shirt"
+          "type": "t-shirt",
+          "quantity": 0
         },
   
         {
@@ -109,7 +120,8 @@
           "image": "https://media.klopperssport.co.za/wp-content/uploads/sites/2/2023/05/827H_1.jpg",
           "brand": "TNF",
           "category": "clothes",
-          "type": "t-shirt"
+          "type": "t-shirt",
+          "quantity": 0
         },
   
         {
@@ -120,7 +132,8 @@
           "image": "https://media.klopperssport.co.za/wp-content/uploads/sites/2/2023/05/827H_1.jpg",
           "brand": "TNF",
           "category": "clothes",
-          "type": "t-shirt"
+          "type": "t-shirt",
+          "quantity": 0
         },
   
         {
@@ -131,7 +144,8 @@
           "image": "https://media.klopperssport.co.za/wp-content/uploads/sites/2/2023/05/827H_1.jpg",
           "brand": "TNF",
           "category": "clothes",
-          "type": "t-shirt"
+          "type": "t-shirt",
+          "quantity": 0
         },
   
         {
@@ -142,7 +156,8 @@
           "image": "https://media.klopperssport.co.za/wp-content/uploads/sites/2/2023/05/827H_1.jpg",
           "brand": "TNF",
           "category": "clothes",
-          "type": "t-shirt"
+          "type": "t-shirt",
+          "quantity": 0
         },
   
         {
@@ -153,7 +168,8 @@
           "image": "https://media.klopperssport.co.za/wp-content/uploads/sites/2/2023/05/827H_1.jpg",
           "brand": "TNF",
           "category": "clothes",
-          "type": "t-shirt"
+          "type": "t-shirt",
+          "quantity": 0
         }
 
 

@@ -1,7 +1,5 @@
-import React from "react";
-import "../App.css";
-import { useState } from "react";
-
+import React, { useState } from "react";
+import { Link, useParams } from "react-router-dom";
 //Components
 import SubHeader from "../Components/SubHeader";
 
@@ -12,8 +10,6 @@ import PageNum from "../Components/PageNum";
 export default function Products(props) {
   const hodiesData = props.hodiesData;
   const TShirtsData = props.TShirtsData;
-  const setCartItems = props.setCartItems;
-  const cartItems = props.cartItems;
   const productData = props.productData;
   const setProductData = props.setProductData;
   const filteredproductData = props.filteredproductData;
