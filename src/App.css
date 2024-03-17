@@ -30,14 +30,51 @@
   min-height: 80vh;
 }
 
+.product-name-search {
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+}
+
+.search-list-div {
+  position: absolute;
+  top: 40px;
+  left: auto;
+  background-color: white;
+  max-height: 700px;
+  overflow-y: auto;
+  padding: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.search-list {
+  box-sizing: border-box;
+  list-style: none;
+}
+
 input:focus {
   outline: none !important;
+  border: black solid 1px !important;
+}
+
+.form-control:focus {
   border: white solid 1px !important;
+}
+.position-sticky {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 .SubHeader {
   position: sticky;
-  top: 0;
+  top: 80px;
   z-index: 1;
 }
 
@@ -75,9 +112,9 @@ input:focus-visible {
   outline: solid black 1px;
 }
 .checkout {
-  position: sticky; /* Set the position of the fixed div */
-  top: 18px; /* Adjust this value as needed */
-  z-index: 1; /* Ensure it's above other content */
+  position: sticky;
+  top: 18px;
+  z-index: 1;
 
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
   height: 200px;
@@ -116,11 +153,36 @@ input:focus-visible {
   height: 15px;
   width: 15px;
 }
+.cart-item-content {
+  width: 100%;
+  height: 100%;
+}
 
+.search-list-item {
+  justify-content: space-between;
+  border-bottom: solid rgb(229, 229, 229) 1px;
+  width: 100%;
+  transition: ease-out 0.1s;
+  height: 140px;
+}
+
+.search-list-item:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.search-item-content {
+  width: 100%;
+  height: 100%;
+}
+.search-item-img {
+  height: 100%;
+  padding: 2px;
+}
 .cart-item-img {
   height: 100%;
   border-radius: 10px;
 }
+
 .rounded-left {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -129,7 +191,7 @@ input:focus-visible {
   justify-content: space-between;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
-  height: 135px;
+  height: 140px;
   padding: 5px;
   border-radius: 10px;
 }
@@ -287,7 +349,7 @@ input[type="checkbox"] {
 }
 .menu {
   position: sticky;
-  top: 60px;
+  top: 144px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
   border-radius: 7px;
   box-sizing: border-box;
@@ -326,20 +388,7 @@ input[type="checkbox"] {
 .addnav-font:hover {
   text-decoration: underline;
 }
-.App-header {
-  background-color: #0055ff;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 @media (min-width: 576px) and (max-width: 767.98px) {
   .nav-item {
     display: flex;

@@ -1,9 +1,9 @@
-import React, { createContext, useState } from "react";
-import "../App.css";
+import React, { useState } from "react";
 
-const SelectedBrandsContext = createContext(null);
+import SortBy from "./SortBy";
 
-export default function FindByMenu({ onSelectBrand }) {
+export default function FindByMenu(props) {
+  const onSelectBrand = props.onSelectBrand;
   const [isChecked, setIsChecked] = useState({
     Nike: false,
     Adidas: false,
@@ -22,6 +22,7 @@ export default function FindByMenu({ onSelectBrand }) {
   return (
     <>
       <div className="menu bg-white d-none d-sm-block p-2">
+        <SortBy />
         <h4>Brand</h4>
         <form action="">
           <div className="form-check">

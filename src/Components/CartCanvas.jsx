@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import cartIcon from "./images/cart-icon.ico";
 import trashIcon from "./images/trash-icon.png";
+import emptyIcon from "../Components/images/empty-box.png";
 export default function Offcanvas(props) {
   const cartItems = props.cartItems;
   const deleteCartItem = props.deleteCartItem;
@@ -25,57 +26,53 @@ export default function Offcanvas(props) {
 
   const listCartItems = () => {
     cartItems.forEach((item) => {
-      totalPrice += item.price;
+      totalPrice += item.quantity * item.price;
     });
 
     roundedTotalPrice = totalPrice.toFixed(2);
     return cartItems.map((item, index) => (
       <div className="cart-list-item d-flex p-0" key={index}>
-        <div className="cart-info d-flex">
-          <div className="border-end rounded-left px-1 bg-gray d-flex flex-column justify-content-center align-items-center">
-            <button
-              className="btn p-0"
-              onClick={(e) => handleIncCartItemQuantity(index)}
-            >
-              <img
-                className=""
-                src={"https://cdn-icons-png.freepik.com/256/14090/14090273.png"}
-                width={20}
-              />
-            </button>
-            <div className="d-flex align-items-center pt-1">
-              {item.quantity}
-            </div>
+        <div className="border-end rounded-left px-1 bg-gray d-flex flex-column justify-content-center align-items-center">
+          <button
+            className="btn p-0"
+            onClick={(e) => handleIncCartItemQuantity(index)}
+          >
+            <img
+              className=""
+              src={"https://cdn-icons-png.freepik.com/256/14090/14090273.png"}
+              width={20}
+            />
+          </button>
+          <div className="d-flex align-items-center pt-1">{item.quantity}</div>
 
-            <button
-              className="btn p-0"
-              onClick={(e) => handleDecCartItemQuantity(index)}
-            >
-              <img
-                className=""
-                src={
-                  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Flat_minus_icon_-_red.svg/768px-Flat_minus_icon_-_red.svg.png"
-                }
-                width={17}
-              />
-            </button>
+          <button
+            className="btn p-0"
+            onClick={(e) => handleDecCartItemQuantity(index)}
+          >
+            <img
+              className=""
+              src={
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Flat_minus_icon_-_red.svg/768px-Flat_minus_icon_-_red.svg.png"
+              }
+              width={17}
+            />
+          </button>
 
-            <button
-              className="btn p-0"
-              onClick={(e) => handleItemDelete(index)}
-            >
-              <img className="" src={trashIcon} width={20} />
-            </button>
-          </div>
-          <div className="ps-2">
+          <button className="btn p-0" onClick={(e) => handleItemDelete(index)}>
+            <img className="" src={trashIcon} width={20} />
+          </button>
+        </div>
+        <div className="cart-item-content d-flex flex-column">
+          <div className="m-2">
             {item.name.length < 70 ? item.name : item.name.slice(0, 70) + "..."}
-
-            <br />
-            <strong className="">
+          </div>
+          <div className="d-flex mt-auto m-1">
+            <strong className="ms-auto">
               {(item.price * item.quantity).toFixed(2)}$
             </strong>
           </div>
         </div>
+
         <div className="cart-item-img">
           <img className="cart-item-img" src={item.image}></img>
         </div>
@@ -129,7 +126,8 @@ export default function Offcanvas(props) {
               </Link>
             </div>
           ) : (
-            <div className="d-flex justify-content-center px-10">
+            <div className="d-flex justify-content-center text-black align-items-center px-10">
+              <img className="me-2" width={50} src={emptyIcon}></img>
               <h3 className="">Your cart is empty</h3>
             </div>
           )}

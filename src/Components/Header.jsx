@@ -13,11 +13,12 @@ import CartCounter from "./CartCounter";
 
 function Header(props) {
   const cartItems = props.cartItems;
+  const allProducts = props.allProducts;
 
   return (
     <>
-      <header className=" bg-dark">
-        <nav className="navbar container-xxl d-flex navbar-expand-md bg-dark navbar-dark p-4">
+      <header className="header bg-dark position-sticky">
+        <nav className="navbar container-xxl d-flex navbar-expand-lg bg-dark navbar-dark p-2">
           <button
             className="navbar-toggler "
             type="button"
@@ -49,7 +50,7 @@ function Header(props) {
                 <strong>Sales</strong>
               </Link>
             </ul>
-            <SearchField />
+            <SearchField allProducts={allProducts} />
           </div>
 
           <div className="d-flex ms-auto">

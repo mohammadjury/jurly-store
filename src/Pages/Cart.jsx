@@ -8,6 +8,16 @@ import emptyIcon from "../Components/images/empty-box.png";
 export default function Cart(props) {
   const cartItems = props.cartItems;
   const deleteCartItem = props.deleteCartItem;
+  const IncCartItem = props.IncCartItem;
+  const DecCartItem = props.DecCartItem;
+
+  const handleIncCartItemQuantity = (index) => {
+    IncCartItem(index);
+  };
+
+  const handleDecCartItemQuantity = (index) => {
+    DecCartItem(index);
+  };
 
   const handleItemDelete = (index) => {
     deleteCartItem(index);
@@ -33,10 +43,38 @@ export default function Cart(props) {
         >
           <h3 className="m-3">{item.name}</h3>
           <br />
-          {item.price}
+          <strong className="">
+            {(item.price * item.quantity).toFixed(2)}$
+          </strong>
         </Link>
         <div className="ms-auto d-flex">
-          <div className="d-flex align-items-center rounded-right bg-gray">
+          <div className="d-flex flex-column justify-content-center align-items-center rounded-right bg-gray">
+            <button
+              className="btn p-0"
+              onClick={(e) => handleIncCartItemQuantity(index)}
+            >
+              <img
+                className=""
+                src={"https://cdn-icons-png.freepik.com/256/14090/14090273.png"}
+                width={20}
+              />
+            </button>
+            <div className="d-flex align-items-center pt-1">
+              {item.quantity}
+            </div>
+
+            <button
+              className="btn p-0"
+              onClick={(e) => handleDecCartItemQuantity(index)}
+            >
+              <img
+                className=""
+                src={
+                  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Flat_minus_icon_-_red.svg/768px-Flat_minus_icon_-_red.svg.png"
+                }
+                width={17}
+              />
+            </button>
             <button
               className="btn p-0"
               onClick={(e) => handleItemDelete(index)}

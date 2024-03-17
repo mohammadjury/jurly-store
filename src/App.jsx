@@ -60,7 +60,7 @@ export default function App() {
   return (
     <div className="app p-0 m-0">
       <BrowserRouter>
-        <Header cartItems={cartItems} />
+        <Header cartItems={cartItems} allProducts={allProducts} />
         <div className="app-content">
           <CartCanvas
             cartItems={cartItems}
@@ -106,6 +106,8 @@ export default function App() {
                     <Cart
                       cartItems={cartItems}
                       deleteCartItem={deleteCartItem}
+                      IncCartItem={IncCartItem}
+                      DecCartItem={DecCartItem}
                     />
                   }
                 />

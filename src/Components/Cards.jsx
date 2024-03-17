@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useState } from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
 
@@ -8,13 +8,17 @@ export default function Cards(props) {
   const productData = props.productData;
   const handleAddToCartPP = props.handleAddToCartPP;
 
+  //const [DataToMap, setDataToMap] = useState([...productData]);
+
+  const DataToMap = [...productData];
+
   const handleAddToCart = (clickedProduct) => {
     handleAddToCartPP(clickedProduct);
   };
 
   return (
     <div className="cardss d-flex flex-wrap">
-      {productData.map((product, index) => (
+      {DataToMap.map((product, index) => (
         <div key={product.id} className="mx-4 mb-4">
           <div className="card" product={product}>
             <img
