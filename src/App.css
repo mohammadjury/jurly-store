@@ -20,6 +20,9 @@
 *:focus {
   box-shadow: none !important;
 }
+*:focus-visible {
+  outline: black 2px solid !important;
+}
 * {
   transition: all 0.05s ease-in-out;
   padding: 0px;
@@ -147,6 +150,15 @@ input:focus-visible {
 .cart-list {
   list-style-type: none;
   padding: 0;
+}
+
+.dropdown-item {
+  cursor: pointer;
+}
+
+.dropdown-item:active {
+  color: white !important;
+  background-color: black !important;
 }
 
 .btn-delete {

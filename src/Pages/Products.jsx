@@ -12,9 +12,9 @@ export default function Products(props) {
   const TShirtsData = props.TShirtsData;
   const productData = props.productData;
   const setProductData = props.setProductData;
-  const filteredproductData = props.filteredproductData;
-  const setFilteredproductData = props.setFilteredproductData;
   const addToCart = props.addToCart;
+
+  const [filteredproductData, setFilteredproductData] = useState(productData);
 
   const handleAddToCartPP = (clickedProduct) => {
     addToCart(clickedProduct);
@@ -54,7 +54,12 @@ export default function Products(props) {
 
       <div className="container-xxl mt-4">
         <div className="content d-flex container-xxl justify-content-center p-0">
-          <FindByMenu onSelectBrand={handleSelectedBrands} />
+          <FindByMenu
+            onSelectBrand={handleSelectedBrands}
+            productData={productData}
+            filteredproductData={filteredproductData}
+            setFilteredproductData={setFilteredproductData}
+          />
           <Cards
             productData={filteredproductData}
             handleAddToCartPP={handleAddToCartPP}

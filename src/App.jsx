@@ -24,7 +24,6 @@ export default function App() {
   const allProducts = hodiesData.concat(TShirtsData);
   const [cartItems, setCartItems] = useState([]);
   const [productData, setProductData] = useState(hodiesData);
-  const [filteredproductData, setFilteredproductData] = useState(productData);
 
   console.log(allProducts);
 
@@ -85,8 +84,6 @@ export default function App() {
                       setCartItems={setCartItems}
                       productData={productData}
                       setProductData={setProductData}
-                      filteredproductData={filteredproductData}
-                      setFilteredproductData={setFilteredproductData}
                       addToCart={addToCart}
                     />
                   }
@@ -121,8 +118,6 @@ export default function App() {
                       setCartItems={setCartItems}
                       productData={productData}
                       setProductData={setProductData}
-                      filteredproductData={filteredproductData}
-                      setFilteredproductData={setFilteredproductData}
                       addToCart={addToCart}
                     />
                   }

@@ -4,6 +4,10 @@ import SortBy from "./SortBy";
 
 export default function FindByMenu(props) {
   const onSelectBrand = props.onSelectBrand;
+  const filteredproductData = props.filteredproductData;
+  const setFilteredproductData = props.setFilteredproductData;
+  const productData = props.productData;
+
   const [isChecked, setIsChecked] = useState({
     Nike: false,
     Adidas: false,
@@ -22,7 +26,11 @@ export default function FindByMenu(props) {
   return (
     <>
       <div className="menu bg-white d-none d-sm-block p-2">
-        <SortBy />
+        <SortBy
+          productData={productData}
+          filteredproductData={filteredproductData}
+          setFilteredproductData={setFilteredproductData}
+        />
         <h4>Brand</h4>
         <form action="">
           <div className="form-check">
