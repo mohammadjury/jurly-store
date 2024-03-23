@@ -25,7 +25,7 @@ export default function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:5121/Product/GetAll");
+        const response = await fetch("http://localhost:5104/Product/GetAll");
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
