@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Search(props) {
-  const allProducts = props.allProducts;
+  const productData = props.productData;
   const [value, setValue] = useState("");
 
-  const listSearched = allProducts.filter((product) => {
+  const listSearched = productData.filter((product) => {
     return product.name.toLowerCase().includes(value.toLowerCase());
   });
 

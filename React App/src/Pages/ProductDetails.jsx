@@ -3,16 +3,16 @@ import { useParams, Link } from "react-router-dom";
 import "../App.css";
 
 export default function ProductDetails(props) {
-  const allProducts = props.allProducts;
+  const productData = props.productData;
   const addToCart = props.addToCart;
   const { id } = useParams();
 
-  const currentProduct = allProducts.find((product) => product.id == id);
+  const currentProduct = productData.find((product) => product.id == id);
 
   const handleAddToCart = (clickedItem) => {
     addToCart(clickedItem);
   };
-  const listSimilerProducts = allProducts
+  const listSimilerProducts = productData
     .filter((product) => {
       return product.type == currentProduct.type;
     })

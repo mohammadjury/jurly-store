@@ -17,12 +17,8 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 
 export default function App() {
-  const [allProducts, setAllProducts] = useState([]);
-  const [hodiesData, setHodiesData] = useState([]);
-  const [TShirtsData, setTShirtsData] = useState([]);
   const [cartItems, setCartItems] = useState([]);
   const [productData, setProductData] = useState([]);
-
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -34,7 +30,7 @@ export default function App() {
           throw new Error("Network response was not ok");
         }
         const data = await response.json();
-        setAllProducts(data);
+        setProductData(data);
       } catch (error) {
         setError(error);
       } finally {
@@ -44,31 +40,17 @@ export default function App() {
     fetchData();
   }, []);
 
-  useEffect(() => {
-    if (allProducts.length > 0) {
-      const hodies = allProducts.filter((item) => item.type === "hoodie");
-      const TShirts = allProducts.filter((item) => item.type === "t-shirt");
-      setHodiesData(hodies);
-      setTShirtsData(TShirts);
-
-      // if (hodies.length > 0) {
-      //   setProductData(hodies);
-      // } else if (TShirts.length > 0) {
-      //   setProductData(TShirts);
-      // }
-    }
-  }, [allProducts]);
-
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div>
+        <div>Loading...</div>
+      </div>
+    );
   }
 
   if (error) {
     return <div>Error: {error.message}</div>;
   }
-
-  console.log(hodiesData);
-  console.log(TShirtsData);
 
   const addToCart = (clickedItem) => {
     const newItem = cartItems.find((item) => item.id === clickedItem.id);
@@ -103,7 +85,7 @@ export default function App() {
   return (
     <div className="app p-0 m-0">
       <BrowserRouter>
-        <Header cartItems={cartItems} allProducts={allProducts} />
+        <Header cartItems={cartItems} productData={productData} />
         <div className="app-content">
           <CartCanvas
             cartItems={cartItems}
@@ -122,8 +104,6 @@ export default function App() {
                   path="/Products"
                   element={
                     <Products
-                      hodiesData={hodiesData}
-                      TShirtsData={TShirtsData}
                       cartItems={cartItems}
                       setCartItems={setCartItems}
                       productData={productData}
@@ -136,7 +116,7 @@ export default function App() {
                   path="/Product/:id"
                   element={
                     <ProductDetails
-                      allProducts={allProducts}
+                      productData={productData}
                       addToCart={addToCart}
                     />
                   }
@@ -156,8 +136,6 @@ export default function App() {
                   path="/*"
                   element={
                     <Products
-                      hodiesData={hodiesData}
-                      TShirtsData={TShirtsData}
                       cartItems={cartItems}
                       setCartItems={setCartItems}
                       productData={productData}

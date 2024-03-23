@@ -13,7 +13,7 @@ import CartCounter from "./CartCounter";
 
 function Header(props) {
   const cartItems = props.cartItems;
-  const allProducts = props.allProducts;
+  const productData = props.productData;
 
   return (
     <>
@@ -50,7 +50,7 @@ function Header(props) {
                 <strong>Sales</strong>
               </Link>
             </ul>
-            <SearchField allProducts={allProducts} />
+            <SearchField productData={productData} />
           </div>
 
           <div className="d-flex ms-auto">
