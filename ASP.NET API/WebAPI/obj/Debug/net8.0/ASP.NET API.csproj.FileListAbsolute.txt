@@ -6,7 +6,6 @@
 /Users/mohammadjury/Desktop/VSCode-Projects/jurly-store/ASP.NET API/WebAPI/obj/Debug/net8.0/ASP.NET API.MvcApplicationPartsAssemblyInfo.cs
 /Users/mohammadjury/Desktop/VSCode-Projects/jurly-store/ASP.NET API/WebAPI/obj/Debug/net8.0/ASP.NET API.MvcApplicationPartsAssemblyInfo.cache
 /Users/mohammadjury/Desktop/VSCode-Projects/jurly-store/ASP.NET API/WebAPI/obj/Debug/net8.0/ASP.NET API.sourcelink.json
-/Users/mohammadjury/Desktop/VSCode-Projects/jurly-store/ASP.NET API/WebAPI/bin/Debug/net8.0/appsettings copy.json
 /Users/mohammadjury/Desktop/VSCode-Projects/jurly-store/ASP.NET API/WebAPI/bin/Debug/net8.0/appsettings.Development.json
 /Users/mohammadjury/Desktop/VSCode-Projects/jurly-store/ASP.NET API/WebAPI/bin/Debug/net8.0/appsettings.json
 /Users/mohammadjury/Desktop/VSCode-Projects/jurly-store/ASP.NET API/WebAPI/bin/Debug/net8.0/ASP.NET API
@@ -140,3 +139,14 @@
 /Users/mohammadjury/Desktop/VSCode-Projects/jurly-store/ASP.NET API/WebAPI/obj/Debug/net8.0/ASP.NET API.pdb
 /Users/mohammadjury/Desktop/VSCode-Projects/jurly-store/ASP.NET API/WebAPI/obj/Debug/net8.0/ASP.NET API.genruntimeconfig.cache
 /Users/mohammadjury/Desktop/VSCode-Projects/jurly-store/ASP.NET API/WebAPI/obj/Debug/net8.0/ref/ASP.NET API.dll
+/Users/mohammadjury/Desktop/VSCode-Projects/jurly-store/ASP.NET API/WebAPI/bin/Debug/net8.0/ASP.NET API.dll.config
+/Users/mohammadjury/Desktop/VSCode-Projects/jurly-store/ASP.NET API/WebAPI/bin/Debug/net8.0/Microsoft.Build.Locator.dll
+/Users/mohammadjury/Desktop/VSCode-Projects/jurly-store/ASP.NET API/WebAPI/obj/Debug/net8.0/ASP.NET API.csproj.SuggestedBindingRedirects.cache
+/Users/mohammadjury/Desktop/VSCode-Projects/jurly-store/ASP.NET API/WebAPI/obj/Debug/net8.0/ASP.NET API.dll.config
+/Users/mohammadjury/Desktop/VSCode-Projects/jurly-store/ASP.NET API/WebAPI/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/mohammadjury/Desktop/VSCode-Projects/jurly-store/ASP.NET API/WebAPI/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/mohammadjury/Desktop/VSCode-Projects/jurly-store/ASP.NET API/WebAPI/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/mohammadjury/Desktop/VSCode-Projects/jurly-store/ASP.NET API/WebAPI/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/mohammadjury/Desktop/VSCode-Projects/jurly-store/ASP.NET API/WebAPI/bin/Debug/net8.0/Microsoft.Extensions.Identity.Core.dll
+/Users/mohammadjury/Desktop/VSCode-Projects/jurly-store/ASP.NET API/WebAPI/bin/Debug/net8.0/Microsoft.Extensions.Identity.Stores.dll
+/Users/mohammadjury/Desktop/VSCode-Projects/jurly-store/ASP.NET API/WebAPI/bin/Debug/net8.0/Microsoft.Extensions.Options.dll

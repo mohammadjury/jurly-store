@@ -8,42 +8,27 @@ namespace WebAPI.Controllers
     [Route("users")]
     public class UsersController : ControllerBase
     {
-        private readonly JurlyStoreContext _dbContext;
-
+           private readonly JurlyStoreContext _dbContext;
+  
         public UsersController(JurlyStoreContext dbContext)
         {
             _dbContext = dbContext;
         }
 
-        [HttpPost("AddUser")]
-        public IActionResult Post(Users user)
+
+        [HttpGet("GetAll")]
+        public IActionResult Get()
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            try
-            {
-                _dbContext.Users.Add(user);
-                _dbContext.SaveChanges();
-
-                return CreatedAtAction(nameof(GetUser), new { id = user.Id }, user);
-            }
-            catch (Exception ex)
-            {
-                // Log the exception for debugging purposes
-                Console.WriteLine(ex);
-
-                return StatusCode(500, "Internal server error. Please try again later.");
-            }
+            var users = this._dbContext.Users.ToList();
+            return Ok(users);
         }
+
 
         [HttpGet("{id}")]
         public IActionResult GetUser(int id)
         {
             // Fetch the user from the database by id
-            var user = _dbContext.Users.Find(id);
+              var user = _dbContext.Users.Find(id);
 
             if (user == null)
             {
@@ -53,5 +38,36 @@ namespace WebAPI.Controllers
             return Ok(user);
         }
 
+
+        [HttpPost("AddUser")]
+        public IActionResult AddUser(Users user)
+        {
+         if (!ModelState.IsValid)
+         {
+        return BadRequest(ModelState);
+         }
+         try
+         {
+        
+            var existingUser = _dbContext.Users.FirstOrDefault(u => (u.Email == user.Email) || (u.Username == user.Username) );
+             if (existingUser != null)
+             {
+              return Conflict("User already exists.");
+             }
+
+              _dbContext.Users.Add(user);
+              _dbContext.SaveChanges();
+
+            return CreatedAtAction(nameof(GetUser), new { id = user.Id }, user);
+         }
+         catch (Exception ex)
+         {
+             Console.WriteLine(ex);
+             return StatusCode(500, "Internal server error. Please try again later.");
+         }
+        }
+
     }
+
+
 }

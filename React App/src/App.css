@@ -69,6 +69,16 @@ input:focus {
   z-index: 1;
   top: 0;
 }
+
+table {
+  table-layout: auto; /* Fixed layout */
+}
+
+td {
+  width: fit-content;
+  max-width: 120px;
+}
+
 .header {
   position: sticky;
   top: 0;

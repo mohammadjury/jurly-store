@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 import "./App.css";
 
 // Pages
@@ -8,6 +9,7 @@ import Home from "./Pages/Home";
 import Products from "./Pages/Products";
 import ProductDetails from "./Pages/ProductDetails";
 import Cart from "./Pages/Cart";
+import Admin from "./Pages/Admin";
 
 // Components
 import CartCanvas from "./Components/CartCanvas";
@@ -25,12 +27,10 @@ export default function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:5104/Product/GetAll");
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        const data = await response.json();
-        setProductData(data);
+        const response = await axios.get(
+          "http://localhost:5104/Product/GetAll"
+        );
+        setProductData(response.data);
       } catch (error) {
         setError(error);
       } finally {
@@ -85,7 +85,9 @@ export default function App() {
   return (
     <div className="app p-0 m-0">
       <BrowserRouter>
-        <Header cartItems={cartItems} productData={productData} />
+        {window.location.href != "http://localhost:3000/Admin" && (
+          <Header cartItems={cartItems} productData={productData} />
+        )}
         <div className="app-content">
           <CartCanvas
             cartItems={cartItems}
@@ -99,6 +101,10 @@ export default function App() {
           <TransitionGroup>
             <CSSTransition classNames="fade" timeout={300}>
               <Routes>
+                <Route
+                  path="/admin"
+                  element={<Admin productData={productData} />}
+                />
                 <Route path="/home" element={<Home cartItems={cartItems} />} />
                 <Route
                   path="/Products"
@@ -148,7 +154,7 @@ export default function App() {
             </CSSTransition>
           </TransitionGroup>
         </div>
-        <Footer />
+        {window.location.href != "http://localhost:3000/Admin" && <Footer />}
       </BrowserRouter>
     </div>
   );
