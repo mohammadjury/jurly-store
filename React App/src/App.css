@@ -33,6 +33,13 @@
   min-height: 80vh;
 }
 
+.left-pannel-item {
+  height: 70px;
+  cursor: pointer;
+}
+.left-pannel-item:hover {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+}
 .product-name-search {
   box-sizing: border-box;
   width: 100%;
@@ -71,12 +78,15 @@ input:focus {
 }
 
 table {
-  table-layout: auto; /* Fixed layout */
+  table-layout: responsive;
 }
 
-td {
-  width: fit-content;
-  max-width: 120px;
+td,
+th {
+  /* width: fit-content; */
+  max-width: 450px;
+  /* min-width: 100px; */
+  scrollbar-width: none;
 }
 
 .header {
@@ -414,6 +424,61 @@ input[type="checkbox"] {
 @media (min-width: 576px) and (max-width: 767.98px) {
   .nav-item {
     display: flex;
+  }
+}
+
+@media (min-width: 1740px) {
+  td,
+  th {
+    /* width: fit-content; */
+
+    max-width: 400px;
+    /* min-width: 100px; */
+    scrollbar-width: none;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1739px) {
+  td,
+  th {
+    /* width: fit-content; */
+
+    max-width: 300px;
+    /* min-width: 100px; */
+    scrollbar-width: none;
+  }
+}
+
+@media (min-width: 1137px) and (max-width: 1440px) {
+  td,
+  th {
+    /* width: fit-content; */
+
+    max-width: 200px;
+    /* min-width: 100px; */
+    scrollbar-width: none;
+  }
+}
+
+@media (min-width: 990px) and (max-width: 1137px) {
+  td,
+  th {
+    /* width: fit-content; */
+
+    max-width: 150px;
+    /* min-width: 100px; */
+    scrollbar-width: none;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 990px) {
+  td,
+  th {
+    /* width: fit-content; */
+
+    max-width: 100px;
+    /* min-width: 100px; */
+    scrollbar-width: none;
   }
 }
 
