@@ -111,10 +111,10 @@ namespace WebAPI.Controllers
         [HttpPost("Login")]
         public IActionResult Login(Users user)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+            // if (!ModelState.IsValid)
+            // {
+            //     return BadRequest(ModelState);
+            // }
 
             var existingUser = _dbContext.Users.FirstOrDefault(u => u.Username == user.Username && u.Password == user.Password);
 
@@ -196,7 +196,7 @@ namespace WebAPI.Controllers
             return Ok(existingUser);
         }
 
-        
+
 
     }
 

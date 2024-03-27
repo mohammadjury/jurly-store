@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 import AdminHeader from "../Components/AdminHeader";
+import AddProductModal from "../Components/AddProductModal";
 
 import trashIcon from "../Components/images/trash-icon.png";
 import editIcon from "../Components/images/edit-icon.svg";
@@ -73,6 +74,7 @@ export default function Admin(props) {
   return (
     <>
       <AdminHeader handleHeaderChoice={handleHeaderChoice} />
+      <AddProductModal />
 
       <div className="main d-flex">
         <div className="m-4 w-100 d-flex container-fluid">
@@ -80,7 +82,11 @@ export default function Admin(props) {
             <thead>
               <tr>
                 {tableHeaders}
-                <button className="btn btn-success bg-success text-light w-100">
+                <button
+                  className="btn btn-success bg-success text-light w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#AddProductModal"
+                >
                   Add
                 </button>
               </tr>
