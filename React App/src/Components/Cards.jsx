@@ -19,14 +19,20 @@ export default function Cards(props) {
   return (
     <div className="cardss d-flex flex-wrap">
       {DataToMap.map((product, index) => (
-        <div key={product.id} className="mx-4 mb-4">
-          <div className="card" product={product}>
+        <div
+          className="card d-flex flex-column justify-content-between mx-4 mb-4"
+          key={product.id}
+          product={product}
+        >
+          <div className="card-image d-flex justify-content-center align-items-center">
             <img
-              className="card-img-top"
+              className="card-img-top d-flex justify-content-center align-items-center"
               src={product.image}
               alt="Card image"
             />
-            <div className="card-body">
+          </div>
+          <div className="card-body">
+            <div className="mt-auto">
               <h5 className="card-title">{product.name}</h5>
               <p className="card-text">Price: {product.price}$</p>
               <div className="d-flex justify-content-between">

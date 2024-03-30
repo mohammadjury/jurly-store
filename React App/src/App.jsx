@@ -10,6 +10,8 @@ import Products from "./Pages/Products";
 import ProductDetails from "./Pages/ProductDetails";
 import Cart from "./Pages/Cart";
 import Admin from "./Pages/Admin";
+import AdminProducts from "./Pages/AdminProducts";
+import AdminUsers from "./Pages/AdminUsers";
 
 // Components
 import CartCanvas from "./Components/CartCanvas";
@@ -85,9 +87,11 @@ export default function App() {
   return (
     <div className="app p-0 m-0">
       <BrowserRouter>
-        {window.location.href != "http://localhost:3000/Admin" && (
-          <Header cartItems={cartItems} productData={productData} />
-        )}
+        {window.location.href != "http://localhost:3000/Admin/products" &&
+          window.location.href != "http://localhost:3000/Admin" &&
+          window.location.href != "http://localhost:3000/Admin/users" && (
+            <Header cartItems={cartItems} productData={productData} />
+          )}
         <div className="app-content">
           <CartCanvas
             cartItems={cartItems}
@@ -101,10 +105,14 @@ export default function App() {
           <TransitionGroup>
             <CSSTransition classNames="fade" timeout={300}>
               <Routes>
+                <Route path="/admin" element={<Admin />} />
+
                 <Route
-                  path="/admin"
-                  element={<Admin productData={productData} />}
+                  path="/admin/products"
+                  element={<AdminProducts DisplayedData={productData} />}
                 />
+
+                <Route path="/admin/users" element={<AdminUsers />} />
                 <Route path="/home" element={<Home cartItems={cartItems} />} />
                 <Route
                   path="/Products"
@@ -154,7 +162,11 @@ export default function App() {
             </CSSTransition>
           </TransitionGroup>
         </div>
-        {window.location.href != "http://localhost:3000/Admin" && <Footer />}
+        {window.location.href != "http://localhost:3000/Admin/products" &&
+          window.location.href != "http://localhost:3000/Admin" &&
+          window.location.href != "http://localhost:3000/Admin/users" && (
+            <Footer />
+          )}
       </BrowserRouter>
     </div>
   );

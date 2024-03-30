@@ -38,6 +38,26 @@ export default function AddProductModal() {
     }
   };
 
+  const handleClose = () => {
+    setError("");
+  };
+
+  if (loading) {
+    return (
+      <div>
+        <div>Loading...</div>
+      </div>
+    );
+  }
+  if (error) {
+    return (
+      <div>
+        <div>Error: {error}</div>
+        <button onClick={handleClose}>Close</button>
+      </div>
+    );
+  }
+
   return (
     <>
       <div

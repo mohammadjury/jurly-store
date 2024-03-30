@@ -19,7 +19,10 @@ export default function AdminHeader(props) {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <Link className="navbar-brand ms-2 me-auto" to="">
+          <Link
+            className="navbar-brand ms-2 me-auto"
+            to="http://localhost:3000/Admin"
+          >
             <h2 className="pt-2">
               <strong>ADMIN</strong>
             </h2>
@@ -32,18 +35,16 @@ export default function AdminHeader(props) {
             <ul className="navbar-nav nav-tabs border-0 me-3 d-md-flex">
               <Link
                 className=" nav-item nav-link rounded ps-auto"
-                to=""
+                to="http://localhost:3000/Admin/users"
                 name="users"
-                onClick={() => clickedChoice("users")}
               >
                 <strong>Users</strong>
               </Link>
 
               <Link
                 className="nav-link  rounded ps-auto"
-                to=""
+                to="http://localhost:3000/Admin/products"
                 name="products"
-                onClick={() => clickedChoice("products")}
               >
                 <strong>Products</strong>
               </Link>
