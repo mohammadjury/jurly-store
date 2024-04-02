@@ -17,6 +17,11 @@ function SubHeader({ onHeaderItemClicked }) {
         <nav className="navbar container-xxl navbar-expand d-flex justify-content-center p-0">
           <div className="d-flex justify-content-center" id="collapsibleNavbar">
             <ul className="navbar-nav border-0">
+              <li className="nav-item">
+                <Link className="nav-link rounded" to="/Products">
+                  All
+                </Link>
+              </li>
               <li className="nav-item rounded">
                 <Link
                   className="nav-link rounded"
@@ -33,16 +38,6 @@ function SubHeader({ onHeaderItemClicked }) {
                   to="/Products/T-Shirts"
                 >
                   T-Shirts
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link rounded" to="/Products">
-                  Mugs
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link rounded" to="/Products">
-                  More
                 </Link>
               </li>
             </ul>

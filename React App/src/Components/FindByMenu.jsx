@@ -71,6 +71,7 @@ export default function FindByMenu(props) {
           </div>
         </form>
         <br></br>
+        {/* 
         <h4>Size</h4>
         <form action="">
           <div className="form-check">
@@ -117,7 +118,7 @@ export default function FindByMenu(props) {
             <input type="checkbox" className="form-check-input" />
             <label className="form-check-label">3XL</label>
           </div>
-        </form>
+        </form> */}
       </div>
     </>
   );

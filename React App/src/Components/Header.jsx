@@ -45,10 +45,6 @@ function Header(props) {
               <Link className="nav-link  rounded ps-auto" to="/Products">
                 <strong>Products</strong>
               </Link>
-
-              <Link className="nav-item nav-link rounded ps-auto" to="">
-                <strong>Sales</strong>
-              </Link>
             </ul>
             <SearchField productData={productData} />
           </div>

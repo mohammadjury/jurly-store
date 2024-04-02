@@ -348,6 +348,9 @@ input[type="checkbox"] {
   width: 25%;
   box-sizing: border-box;
 }
+.carousel-itemm:hover {
+  border: solid black 2px;
+}
 
 /* .card-img {
   max-width: 300px;

@@ -180,18 +180,7 @@ export default function App() {
                     />
                   }
                 />
-                <Route
-                  path="/*"
-                  element={
-                    <Products
-                      cartItems={cartItems}
-                      setCartItems={setCartItems}
-                      productData={productData}
-                      setProductData={setProductData}
-                      addToCart={addToCart}
-                    />
-                  }
-                />
+                <Route path="/*" element={<Home productData={productData} />} />
               </Routes>
             </CSSTransition>
           </TransitionGroup>
