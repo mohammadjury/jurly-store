@@ -47,7 +47,7 @@ export default function Offcanvas(props) {
 
           <button
             className="btn p-0"
-            onClick={(e) => handleDecCartItemQuantity(index)}
+            onClick={(e) => handleDecCartItemQuantity(item)}
           >
             <img
               className=""

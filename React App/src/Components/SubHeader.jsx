@@ -18,22 +18,22 @@ function SubHeader({ onHeaderItemClicked }) {
           <div className="d-flex justify-content-center" id="collapsibleNavbar">
             <ul className="navbar-nav border-0">
               <li className="nav-item rounded">
-                <button
+                <Link
                   className="nav-link rounded"
                   name="Hodies"
-                  onClick={(e) => handleItemClicked(e.target.name)}
+                  to="/Products/Hoodies"
                 >
                   Hodies
-                </button>
+                </Link>
               </li>
               <li className="nav-item dropdown">
-                <button
+                <Link
                   className="nav-link rounded"
                   name="T-Shirts"
-                  onClick={(e) => handleItemClicked(e.target.name)}
+                  to="/Products/T-Shirts"
                 >
                   T-Shirts
-                </button>
+                </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link rounded" to="/Products">

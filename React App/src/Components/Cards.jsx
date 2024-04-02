@@ -24,11 +24,15 @@ export default function Cards(props) {
           key={product.id}
           product={product}
         >
-          <div className="card-image d-flex justify-content-center align-items-center">
+          <div
+            className="card-img-top d-flex justify-content-center align-items-center"
+            style={{ width: "100%", overflowY: "hidden" }}
+          >
             <img
-              className="card-img-top d-flex justify-content-center align-items-center"
+              className="card-img d-flex justify-content-center align-items-center"
               src={product.image}
               alt="Card image"
+              style={{ width: "100%", height: "auto" }}
             />
           </div>
           <div className="card-body">

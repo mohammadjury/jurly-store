@@ -7,6 +7,8 @@ import "./App.css";
 // Pages
 import Home from "./Pages/Home";
 import Products from "./Pages/Products";
+import HoodiesProducts from "./Pages/HoodiesProducts";
+import TshirtsProducts from "./Pages/TshirtsProducts";
 import ProductDetails from "./Pages/ProductDetails";
 import Cart from "./Pages/Cart";
 import Admin from "./Pages/Admin";
@@ -113,7 +115,12 @@ export default function App() {
                 />
 
                 <Route path="/admin/users" element={<AdminUsers />} />
-                <Route path="/home" element={<Home cartItems={cartItems} />} />
+                <Route
+                  path="/home"
+                  element={
+                    <Home cartItems={cartItems} productData={productData} />
+                  }
+                />
                 <Route
                   path="/Products"
                   element={
@@ -126,6 +133,33 @@ export default function App() {
                     />
                   }
                 />
+
+                <Route
+                  path="/Products/Hoodies"
+                  element={
+                    <HoodiesProducts
+                      cartItems={cartItems}
+                      setCartItems={setCartItems}
+                      productData={productData}
+                      setProductData={setProductData}
+                      addToCart={addToCart}
+                    />
+                  }
+                />
+
+                <Route
+                  path="/Products/T-Shirts"
+                  element={
+                    <TshirtsProducts
+                      cartItems={cartItems}
+                      setCartItems={setCartItems}
+                      productData={productData}
+                      setProductData={setProductData}
+                      addToCart={addToCart}
+                    />
+                  }
+                />
+
                 <Route
                   path="/Product/:id"
                   element={

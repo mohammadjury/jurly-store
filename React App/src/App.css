@@ -348,9 +348,15 @@ input[type="checkbox"] {
   width: 25%;
   box-sizing: border-box;
 }
+
+/* .card-img {
+  max-width: 300px;
+  overflow: hidden;
+}
 .card-img-top {
   width: 100%;
-}
+  height: auto; 
+}*/
 .account-image {
   width: 50px;
   cursor: pointer;
