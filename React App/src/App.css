@@ -1,16 +1,20 @@
+/* Define CSS classes for fade animations */
 .fade-enter {
-  opacity: 0 !;
+  opacity: 0;
 }
+
 .fade-enter-active {
   opacity: 1;
-  transition: opacity 500ms ease-in;
+  transition: opacity 300ms ease-in-out;
 }
+
 .fade-exit {
   opacity: 1;
 }
+
 .fade-exit-active {
   opacity: 0;
-  transition: opacity 500ms ease-out;
+  transition: opacity 300ms ease-in-out;
 }
 
 .transition {
@@ -104,7 +108,7 @@ th {
 .cart-p-item {
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
-  height: 300px;
+  height: 150px;
   width: 950px;
 
   border-radius: 10px;
@@ -315,9 +319,10 @@ input:focus-visible {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
+
 .card {
-  height: 450px !important;
-  width: 300px;
+  height: 400px !important;
+  width: 250px;
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;

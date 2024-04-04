@@ -1,4 +1,4 @@
-import React, { createFactory, useState } from "react";
+import React from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
 
@@ -44,6 +44,10 @@ function Header(props) {
 
               <Link className="nav-link  rounded ps-auto" to="/Products">
                 <strong>Products</strong>
+              </Link>
+
+              <Link className="nav-link  rounded ps-auto" to="/Sales">
+                <strong>Sales</strong>
               </Link>
             </ul>
             <SearchField productData={productData} />

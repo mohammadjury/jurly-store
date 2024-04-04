@@ -3,11 +3,14 @@ import { Link } from "react-router-dom";
 import cartIcon from "./images/cart-icon.ico";
 import trashIcon from "./images/trash-icon.png";
 import emptyIcon from "../Components/images/empty-box.png";
+import AuthinticationModal from "./AuthinticationModal";
 export default function Offcanvas(props) {
   const cartItems = props.cartItems;
   const deleteCartItem = props.deleteCartItem;
   const IncCartItem = props.IncCartItem;
   const DecCartItem = props.DecCartItem;
+
+  const [selectedProduct, setSelectedProduct] = useState([]);
 
   const handleItemDelete = (index) => {
     deleteCartItem(index);
@@ -26,10 +29,12 @@ export default function Offcanvas(props) {
 
   const listCartItems = () => {
     cartItems.forEach((item) => {
-      totalPrice += item.quantity * item.price;
+      if (item.discount != null) totalPrice += item.quantity * item.discount;
+      else totalPrice += item.quantity * item.price;
     });
 
     roundedTotalPrice = totalPrice.toFixed(2);
+
     return cartItems.map((item, index) => (
       <div className="cart-list-item d-flex p-0" key={index}>
         <div className="border-end rounded-left px-1 bg-gray d-flex flex-column justify-content-center align-items-center">
@@ -47,7 +52,7 @@ export default function Offcanvas(props) {
 
           <button
             className="btn p-0"
-            onClick={(e) => handleDecCartItemQuantity(item)}
+            onClick={(e) => handleDecCartItemQuantity(index)}
           >
             <img
               className=""
@@ -58,7 +63,13 @@ export default function Offcanvas(props) {
             />
           </button>
 
-          <button className="btn p-0" onClick={(e) => handleItemDelete(index)}>
+          <button
+            className="btn p-0"
+            name="delete button"
+            onClick={(e) => setSelectedProduct(index)}
+            data-bs-toggle="modal"
+            data-bs-target="#AuthinticationModal"
+          >
             <img className="" src={trashIcon} width={20} />
           </button>
         </div>
@@ -66,10 +77,23 @@ export default function Offcanvas(props) {
           <div className="m-2">
             {item.name.length < 70 ? item.name : item.name.slice(0, 70) + "..."}
           </div>
-          <div className="d-flex mt-auto m-1">
-            <strong className="ms-auto">
-              {(item.price * item.quantity).toFixed(2)}$
-            </strong>
+          <div className="ms-auto mt-auto m-1">
+            {item.discount != null ? (
+              <>
+                <del className="ms-auto">
+                  <strong className="p-1">
+                    {(item.price * item.quantity).toFixed(2)}$
+                  </strong>
+                </del>
+                <strong className="ms-auto d-flex justify-content-center border bg-danger text-white rounded border-danger p-1 text-danger">
+                  {(item.discount * item.quantity).toFixed(2)}$
+                </strong>
+              </>
+            ) : (
+              <strong className="ms-auto">
+                {(item.price * item.quantity).toFixed(2)}$
+              </strong>
+            )}
           </div>
         </div>
 
@@ -81,6 +105,11 @@ export default function Offcanvas(props) {
   };
   return (
     <>
+      <AuthinticationModal
+        modalTitle="Delete Product"
+        selectedItem={selectedProduct}
+        handleDeleteProduct={handleItemDelete}
+      />
       <div
         className="offcanvas offcanvas-end"
         data-bs-scroll="true"

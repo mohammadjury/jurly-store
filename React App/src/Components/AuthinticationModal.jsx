@@ -33,8 +33,8 @@ export default function AuthinticationModal(props) {
             </div>
             <div class="modal-body">
               <div>
-                Are you sure you want to delete{" "}
-                <strong>"{selectedItem.name}"</strong>
+                Are you sure you want to delete this item
+                {selectedItem.name && <strong>"{selectedItem.name}"</strong>}
               </div>
             </div>
             <div class="modal-footer">

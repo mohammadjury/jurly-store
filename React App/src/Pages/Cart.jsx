@@ -28,7 +28,8 @@ export default function Cart(props) {
 
   const listCartItems = () => {
     cartItems.forEach((item) => {
-      totalPrice += item.price;
+      if (item.discount != null) totalPrice += item.quantity * item.discount;
+      else totalPrice += item.quantity * item.price;
     });
 
     roundedTotalPrice = totalPrice.toFixed(2);
@@ -42,46 +43,58 @@ export default function Cart(props) {
           className="text-decoration-none text-black ps-2"
         >
           <h3 className="m-3">{item.name}</h3>
-          <br />
-          <strong className="">
-            {(item.price * item.quantity).toFixed(2)}$
-          </strong>
-        </Link>
-        <div className="ms-auto d-flex">
-          <div className="d-flex flex-column justify-content-center align-items-center rounded-right bg-gray">
-            <button
-              className="btn p-0"
-              onClick={(e) => handleIncCartItemQuantity(index)}
-            >
-              <img
-                className=""
-                src={"https://cdn-icons-png.freepik.com/256/14090/14090273.png"}
-                width={20}
-              />
-            </button>
-            <div className="d-flex align-items-center pt-1">
-              {item.quantity}
-            </div>
 
-            <button
-              className="btn p-0"
-              onClick={(e) => handleDecCartItemQuantity(index)}
-            >
-              <img
-                className=""
-                src={
-                  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Flat_minus_icon_-_red.svg/768px-Flat_minus_icon_-_red.svg.png"
-                }
-                width={17}
-              />
-            </button>
-            <button
-              className="btn p-0"
-              onClick={(e) => handleItemDelete(index)}
-            >
-              <img className="" src={trashIcon} />
-            </button>
-          </div>
+          <div className="m-3 "></div>
+        </Link>
+
+        <div className="d-flex ms-auto ">
+          {item.discount != null ? (
+            <div className="ms-auto mt-auto m-1 d-flex flex-column">
+              <del className="ms-auto">
+                <h4 className=" ms-auto d-flex">
+                  {(item.price * item.quantity).toFixed(2)}
+                  <h5>$</h5>
+                </h4>
+              </del>
+              <h4 className="ms-auto d-flex border bg-danger text-white rounded border-danger p-1 text-danger">
+                {(item.discount * item.quantity).toFixed(2)} <h5>$</h5>
+              </h4>
+            </div>
+          ) : (
+            <h2 className="ms-auto mb-2 mt-auto m-1 d-flex flex-column">
+              {(item.price * item.quantity).toFixed(2)}$
+            </h2>
+          )}
+        </div>
+
+        <div className=" me-0 ms-3 d-flex flex-column justify-content-center align-items-center rounded-right bg-gray">
+          <button
+            className="btn p-0"
+            onClick={(e) => handleIncCartItemQuantity(index)}
+          >
+            <img
+              className=""
+              src={"https://cdn-icons-png.freepik.com/256/14090/14090273.png"}
+              width={20}
+            />
+          </button>
+          <div className="d-flex align-items-center pt-1">{item.quantity}</div>
+
+          <button
+            className="btn p-0"
+            onClick={(e) => handleDecCartItemQuantity(index)}
+          >
+            <img
+              className=""
+              src={
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Flat_minus_icon_-_red.svg/768px-Flat_minus_icon_-_red.svg.png"
+              }
+              width={17}
+            />
+          </button>
+          <button className="btn p-0" onClick={(e) => handleItemDelete(index)}>
+            <img className="" src={trashIcon} />
+          </button>
         </div>
       </div>
     ));

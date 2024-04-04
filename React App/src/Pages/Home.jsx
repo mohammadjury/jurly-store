@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
-
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 

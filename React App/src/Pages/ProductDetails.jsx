@@ -91,7 +91,22 @@ export default function ProductDetails(props) {
               </div>
 
               <div className="d-flex align-items-center ms-3 ">
-                <h4>{currentProduct.price}$</h4>
+                {currentProduct.discount ? (
+                  <div className="card-text d-flex">
+                    <h4>
+                      Price: <del className="text">{currentProduct.price}</del>
+                    </h4>
+                    &nbsp;
+                    <h4>
+                      <strong className="text-danger border border-danger p-1">
+                        {" "}
+                        {currentProduct.discount}$
+                      </strong>
+                    </h4>
+                  </div>
+                ) : (
+                  <p className="card-text">Price: {currentProduct.price}$</p>
+                )}
               </div>
               <div className=" d-flex border-bottom add2c-btn">
                 <button className=" btn btn-success p-3 m-3 w-100 ">
