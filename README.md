@@ -67,3 +67,44 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 For any inquiries or issues regarding the project, please contact [mohammadjury00@gmail.com].
 
 Thank you for using my E-Commerce Website repository! I hope you find it useful and look forward to any contributions you make. Happy coding! 🚀
+
+### API's
+
+Built API's and Backend logic with ASP.NET Framework.
+
+![ASP NET API's (Swagger)](https://github.com/mohammadjury/jurly-store/assets/93785257/d44a25ad-7ea7-469f-acb8-1888845d1456)
+
+
+### Pages&Components
+
+**Home Page**
+
+![Home Page](https://github.com/mohammadjury/jurly-store/assets/93785257/1912b07a-14ef-46da-b103-29a11fb51227)
+
+**Products Page**
+
+![Products Page](https://github.com/mohammadjury/jurly-store/assets/93785257/b41281b6-f71b-4096-8958-958d610ae102)
+
+**Product Details Page Page**
+
+![View Product Page](https://github.com/mohammadjury/jurly-store/assets/93785257/879fb873-acc9-4f23-ae9e-e3082ba61214)
+
+**Search**
+
+![Search](https://github.com/mohammadjury/jurly-store/assets/93785257/a555fda5-7d9d-420e-8473-0adbca68e20f)
+
+**Mini Cart**
+
+![Mini Cart](https://github.com/mohammadjury/jurly-store/assets/93785257/55b7b958-3c53-4f62-a2ef-7587cab71b8b)
+
+**Cart Page**
+
+![Cart Page](https://github.com/mohammadjury/jurly-store/assets/93785257/d8309b26-4059-470e-8818-ef36be0ed678)
+
+**Sign in & Register**
+
+![Sign in](https://github.com/mohammadjury/jurly-store/assets/93785257/2afd9a6f-3cda-4df6-b839-e9019d8ccdfb)
+![Register](https://github.com/mohammadjury/jurly-store/assets/93785257/23dda8d3-8564-407d-a6b2-06cba5b24c76)
+
+
+
