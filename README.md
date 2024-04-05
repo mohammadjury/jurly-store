@@ -107,4 +107,10 @@ Built API's and Backend logic with ASP.NET Framework.
 ![Register](https://github.com/mohammadjury/jurly-store/assets/93785257/23dda8d3-8564-407d-a6b2-06cba5b24c76)
 
 
+**Admin Page (Products)**
 
+![Admin Page](https://github.com/mohammadjury/jurly-store/assets/93785257/febe73a4-67af-4cca-abcf-d85a2818165a)
+
+**Admin Page (Users)**
+
+![Admin Page (Users)](https://github.com/mohammadjury/jurly-store/assets/93785257/18b0778f-203d-4665-8e4e-8deab3a45650)
